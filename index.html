@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
@@ -197,7 +196,7 @@
         <h2 id="privacyTitle">Política de Privacidade</h2>
 
         <p class="updated" id="privacyDate">
-            Última atualização: 4 de outubro de 2026
+            Última atualização: 20 de outubro de 2026
         </p>
 
         <div id="privacyContent"></div>
@@ -210,7 +209,7 @@
         <h2 id="termsTitle">Termos de Utilização</h2>
 
         <p class="updated" id="termsDate">
-            Última atualização: 4 de outubro de 2026
+            Última atualização: 20 de outubro de 2026
         </p>
 
         <div id="termsContent"></div>
@@ -241,212 +240,60 @@ const translations = {
         privacyTitle: "Política de Privacidade",
         termsTitle: "Termos de Utilização",
 
-        updated: "Última atualização: 4 de outubro de 2026",
+        updated: "Última atualização: 20 de outubro de 2026",
 
-        privacy: `
-
-            <h3>1. Resumo</h3>
-
-            <p>
-                O HexQuest é um jogo gratuito suportado por publicidade.
-                Não é necessário criar uma conta e não solicitamos diretamente
-                dados pessoais para utilizar o jogo.
-            </p>
-
-            <p>
-                O progresso do jogo é armazenado localmente no dispositivo.
-                A publicidade é fornecida através do Google AdMob, que pode
-                processar determinados dados técnicos e de utilização para
-                fornecer e medir anúncios, de acordo com as respetivas
-                políticas e configurações aplicáveis.
-            </p>
-
-
-            <h3>2. O que fica guardado no dispositivo</h3>
-
-            <p>
-                O HexQuest armazena localmente no dispositivo informações
-                necessárias para manter o progresso e as preferências do jogador,
-                incluindo:
-            </p>
-
-            <ul>
-                <li>Recordes por modo de jogo, incluindo Clássico e Contra o Tempo;</li>
-                <li>Progresso em Desafios e Match-3;</li>
-                <li>Moedas, temas desbloqueados e objetivos;</li>
-                <li>Preferências de som e vibração;</li>
-                <li>Preferência de tema;</li>
-                <li>Preferência de idioma.</li>
-            </ul>
-
-            <p>
-                Estes dados são armazenados localmente e podem ser eliminados
-                quando a aplicação é desinstalada ou quando os dados da aplicação
-                são eliminados através das definições do dispositivo.
-            </p>
-
-
-            <h3>3. Publicidade e terceiros</h3>
-
-            <p>
-                O HexQuest utiliza o Google AdMob para apresentar publicidade,
-                incluindo banners e vídeos recompensados.
-            </p>
-
-            <p>
-                O SDK do Google AdMob pode processar informações como
-                identificadores de publicidade, endereço IP, informações técnicas
-                do dispositivo e dados relacionados com a utilização da publicidade,
-                conforme aplicável à configuração da aplicação, à região do
-                utilizador e às escolhas de consentimento.
-            </p>
-
-            <p>
-                Para mais informações sobre a forma como a Google trata os dados,
-                consulta a
-                <a href="https://policies.google.com/privacy"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Política de Privacidade da Google
-                </a>.
-            </p>
-
-
-            <h3>4. O teu consentimento</h3>
-
-            <p>
-                Na primeira utilização, quando legalmente aplicável, o HexQuest
-                apresenta uma opção relativa à utilização de publicidade
-                personalizada.
-            </p>
-
-            <p>
-                Dependendo da região e das opções disponíveis, o utilizador pode
-                aceitar ou recusar a publicidade personalizada. Quando a
-                publicidade personalizada não é autorizada, podem ser apresentados
-                anúncios não personalizados.
-            </p>
-
-            <p>
-                As opções de publicidade e privacidade podem também depender das
-                definições e mecanismos de consentimento disponibilizados pelo
-                sistema ou pela Google.
-            </p>
-
-
-            <h3>5. Crianças</h3>
-
-            <p>
-                O HexQuest não é direcionado especificamente a crianças.
-                Não solicitamos intencionalmente dados pessoais de crianças.
-            </p>
-
+        privacy: `<h3>1. Resumo</h3>
+<p>O HexQuest é um jogo gratuito suportado por publicidade. Não precisas de criar uma conta e o jogo não exige que forneças dados pessoais para jogar.</p>
+<p>O progresso e as preferências são guardados localmente no dispositivo. A publicidade é fornecida pelo Google AdMob, cujo SDK pode recolher e partilhar determinados dados técnicos e de utilização para apresentar e medir anúncios, analisar o desempenho e prevenir fraudes.</p>
+<h3>2. Dados guardados no dispositivo</h3>
+<p>O HexQuest guarda localmente informações necessárias ao funcionamento do jogo, incluindo:</p>
+<ul><li>Recordes nos modos Clássico e Contra o Tempo;</li><li>Progresso nos Desafios e no Match-3;</li><li>Moedas virtuais, temas desbloqueados e objetivos;</li><li>Preferências de som, vibração, tema e idioma.</li></ul>
+<p>Estes dados são guardados localmente e não são enviados para um servidor próprio do HexQuest, de acordo com o funcionamento atual do jogo. A conservação depende do dispositivo e das funcionalidades de cópia de segurança do sistema operativo. A desinstalação pode eliminar os dados locais da aplicação.</p>
+<h3>3. Publicidade e terceiros</h3>
+<p>O HexQuest utiliza o Google AdMob para apresentar banners e vídeos recompensados.</p>
+<p>Consoante a configuração do SDK, a região e as escolhas de privacidade, podem ser recolhidos e partilhados dados como o endereço IP, identificadores de publicidade e outros identificadores do dispositivo, interações com a aplicação e os anúncios, e informações de diagnóstico e desempenho. Estes dados podem ser utilizados para disponibilizar e medir publicidade, analisar o desempenho dos serviços e prevenir fraudes.</p>
+<p>Para mais informações, consulta a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade da Google</a> e a <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentação de privacidade do Google Mobile Ads SDK</a>.</p>
+<h3>4. Consentimento e anúncios personalizados</h3>
+<p>Quando exigido, o jogo apresenta uma mensagem de privacidade que permite escolher as opções aplicáveis à publicidade.</p>
+<p>Consoante as opções disponibilizadas, podes consentir ou recusar a utilização dos teus dados para publicidade personalizada. A recusa de publicidade personalizada não significa necessariamente que deixes de ver anúncios: poderão continuar a ser apresentados anúncios não personalizados ou anúncios limitados, conforme as condições aplicáveis.</p>
+<p>Quando a legislação ou as regras aplicáveis o exigirem, poderás rever ou retirar o consentimento através das opções de privacidade disponibilizadas no jogo.</p>
+<h3>5. Crianças</h3>
+<p>O HexQuest não se destina especificamente a crianças. Não solicitamos intencionalmente dados pessoais de crianças. A publicidade e as opções de privacidade devem ser configuradas de acordo com a faixa etária a que o jogo se destina e com os requisitos legais e das plataformas aplicáveis.</p>
+<h3>6. Conservação e segurança</h3>
+<p>O HexQuest não mantém uma conta de utilizador nem um sistema próprio de sincronização do progresso entre dispositivos. Não é possível garantir a recuperação de dados locais após perda de dados, falha do dispositivo ou desinstalação. Os dados tratados pelo Google AdMob estão sujeitos às práticas de segurança, conservação e tratamento da Google.</p>
+<h3>7. Direitos e contacto</h3>
+<p>Nos termos da legislação aplicável, incluindo o Regulamento Geral sobre a Proteção de Dados (RGPD), poderás ter direitos de acesso, retificação, apagamento, limitação, oposição e retirada do consentimento, conforme aplicável ao tratamento em causa.</p>
+<p>Para questões relacionadas com a privacidade do HexQuest, contacta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Os pedidos relativos a dados tratados diretamente pela Google poderão ter de ser apresentados à própria Google, através dos seus canais de privacidade.</p>
+<p>Podes também apresentar uma reclamação à Comissão Nacional de Proteção de Dados (CNPD), em Portugal, quando aplicável.</p>
+<h3>8. Alterações à Política de Privacidade</h3>
+<p>Esta política poderá ser atualizada para refletir alterações no jogo, nos serviços utilizados ou nas obrigações legais. A versão em vigor será disponibilizada através dos canais oficiais do HexQuest e da ligação publicada na Google Play.</p>
         `,
 
-        terms: `
-
-            <h3>1. Aceitação</h3>
-
-            <p>
-                Ao instalar e utilizar o HexQuest, concordas com estes Termos de
-                Utilização. Se não concordares com estes termos, não deves utilizar
-                a aplicação.
-            </p>
-
-
-            <h3>2. Licença de uso</h3>
-
-            <p>
-                É concedida uma licença pessoal, não exclusiva e não transferível
-                para utilizar o HexQuest para fins pessoais e de entretenimento.
-            </p>
-
-            <p>
-                Não é permitido copiar, modificar, distribuir, vender,
-                redistribuir ou tentar extrair partes do jogo, do seu código ou
-                dos seus recursos, salvo quando permitido pela legislação aplicável.
-            </p>
-
-
-            <h3>3. Moedas virtuais</h3>
-
-            <p>
-                As moedas são elementos virtuais utilizados dentro do jogo e
-                não possuem valor monetário real.
-            </p>
-
-            <p>
-                As moedas não podem ser trocadas por dinheiro, transferidas para
-                outros utilizadores ou convertidas em moeda real.
-            </p>
-
-            <p>
-                Podemos ajustar, remover ou corrigir moedas e outros elementos
-                virtuais quando necessário, nomeadamente em caso de erro,
-                utilização indevida ou alterações ao funcionamento do jogo.
-            </p>
-
-
-            <h3>4. Publicidade</h3>
-
-            <p>
-                O HexQuest é disponibilizado gratuitamente e pode apresentar
-                publicidade através de serviços de terceiros, incluindo banners
-                e vídeos recompensados fornecidos pelo Google AdMob.
-            </p>
-
-            <p>
-                O conteúdo dos anúncios é fornecido por terceiros. O HexQuest
-                não controla individualmente o conteúdo apresentado em cada anúncio
-                e não é responsável pelo conteúdo ou pelas práticas dos anunciantes
-                terceiros.
-            </p>
-
-
-            <h3>5. Propriedade intelectual</h3>
-
-            <p>
-                O nome HexQuest, o grafismo, o código, os elementos visuais,
-                sonoros e outros componentes da aplicação pertencem aos respetivos
-                autores e titulares dos direitos aplicáveis.
-            </p>
-
-            <p>
-                Estes Termos não concedem ao utilizador qualquer direito de
-                propriedade sobre esses elementos.
-            </p>
-
-
-            <h3>6. Limitação de responsabilidade</h3>
-
-            <p>
-                O HexQuest é disponibilizado "tal como está".
-                Embora sejam realizados esforços para manter a aplicação
-                funcional, não garantimos que o jogo esteja permanentemente
-                disponível ou completamente livre de erros.
-            </p>
-
-            <p>
-                Na medida permitida pela legislação aplicável, não somos
-                responsáveis por perdas de progresso, dados ou outras
-                consequências resultantes da utilização ou impossibilidade
-                de utilização da aplicação.
-            </p>
-
-
-            <h3>7. Alterações</h3>
-
-            <p>
-                Podemos atualizar estes Termos de Utilização quando necessário,
-                nomeadamente devido a alterações no jogo, nos serviços utilizados
-                ou nos requisitos legais.
-            </p>
-
-            <p>
-                A versão mais recente dos Termos será disponibilizada nesta página
-                e, quando aplicável, dentro da aplicação.
-            </p>
-
+        terms: `<h3>1. Âmbito e aceitação</h3>
+<p>Os presentes Termos regulam a utilização do HexQuest, um jogo gratuito para dispositivos móveis. Ao instalar ou utilizar o jogo, comprometes-te a respeitar estes Termos e a legislação aplicável. Se não concordares, deverás deixar de utilizar a aplicação e poderás desinstalá-la.</p>
+<h3>2. Licença de utilização</h3>
+<p>É concedida uma licença pessoal, limitada, não exclusiva e não transferível para utilizar o HexQuest para fins pessoais e não comerciais.</p>
+<p>Não podes copiar, modificar, distribuir, vender, sublicenciar ou redistribuir o jogo, nem tentar obter o seu código-fonte por meios não autorizados, salvo quando tal seja permitido pela legislação aplicável.</p>
+<h3>3. Moedas virtuais e elementos do jogo</h3>
+<p>As moedas virtuais e os restantes elementos desbloqueáveis destinam-se exclusivamente à utilização dentro do HexQuest. Não têm valor monetário real, não representam dinheiro ou crédito e não podem ser trocados ou convertidos em dinheiro. Não podem ser transferidos para outros jogadores nem utilizados fora do jogo.</p>
+<p>O HexQuest poderá corrigir saldos incorretos ou ajustar elementos virtuais quando necessário para corrigir erros, prevenir fraude ou assegurar o funcionamento adequado do jogo.</p>
+<h3>4. Publicidade e recompensas</h3>
+<p>O HexQuest é gratuito e é financiado através de publicidade, incluindo banners e vídeos recompensados fornecidos pelo Google AdMob.</p>
+<p>A visualização de vídeos recompensados é opcional. A disponibilidade dos anúncios depende dos serviços de publicidade e das condições técnicas e geográficas aplicáveis. As recompensas são atribuídas de acordo com as regras apresentadas no jogo.</p>
+<p>O HexQuest não controla os anúncios apresentados por terceiros nem os respetivos destinos externos.</p>
+<h3>5. Propriedade intelectual</h3>
+<p>O nome HexQuest, o grafismo, os elementos visuais, o código e os restantes conteúdos do jogo estão protegidos pelos direitos de propriedade intelectual aplicáveis e pertencem aos respetivos titulares.</p>
+<p>A utilização do jogo não concede quaisquer direitos de propriedade sobre os seus conteúdos.</p>
+<h3>6. Disponibilidade e responsabilidade</h3>
+<p>O jogo é disponibilizado conforme se encontra, podendo conter erros ou ficar temporariamente indisponível devido a manutenção, atualizações, limitações técnicas ou serviços de terceiros.</p>
+<p>Não é garantido que o jogo funcione ininterruptamente ou que o progresso local possa ser sempre recuperado após perda de dados, falha do dispositivo ou desinstalação. Na máxima medida permitida pela legislação aplicável, nada nestes Termos limita direitos imperativos dos consumidores ou exclui responsabilidades que não possam ser legalmente excluídas.</p>
+<h3>7. Alterações e atualizações</h3>
+<p>O jogo e estes Termos poderão ser atualizados para corrigir erros, introduzir funcionalidades, melhorar a segurança ou refletir alterações legais e técnicas. As alterações relevantes serão comunicadas pelos meios adequados, quando necessário.</p>
+<p>A versão atual dos Termos será disponibilizada nesta página e, quando aplicável, dentro da aplicação.</p>
+<h3>8. Legislação aplicável</h3>
+<p>Os presentes Termos são interpretados de acordo com a legislação aplicável. Nada nestes Termos prejudica os direitos imperativos que assistam aos consumidores ao abrigo da legislação aplicável.</p>
+<h3>9. Contacto</h3>
+<p>Para questões relacionadas com os Termos de Utilização, contacta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
         `,
 
         footer: "© 2026 HexQuest. Todos os direitos reservados."
@@ -465,205 +312,60 @@ const translations = {
         privacyTitle: "Privacy Policy",
         termsTitle: "Terms of Use",
 
-        updated: "Last updated: October 4, 2026",
+        updated: "Last updated: October 20, 2026",
 
-        privacy: `
-
-            <h3>1. Summary</h3>
-
-            <p>
-                HexQuest is a free game supported by advertising.
-                No account is required and we do not directly request personal
-                information to use the game.
-            </p>
-
-            <p>
-                Game progress is stored locally on the device.
-                Advertising is provided through Google AdMob, which may process
-                certain technical and usage data to provide and measure ads,
-                according to its applicable policies and settings.
-            </p>
-
-
-            <h3>2. Information stored on the device</h3>
-
-            <p>
-                HexQuest stores information locally on the device that is
-                necessary to maintain game progress and player preferences,
-                including:
-            </p>
-
-            <ul>
-                <li>High scores by game mode, including Classic and Time Attack;</li>
-                <li>Progress in Challenges and Match-3;</li>
-                <li>Coins, unlocked themes and objectives;</li>
-                <li>Sound and vibration preferences;</li>
-                <li>Theme preference;</li>
-                <li>Language preference.</li>
-            </ul>
-
-            <p>
-                This information is stored locally and may be deleted when the
-                application is uninstalled or when application data is deleted
-                through the device settings.
-            </p>
-
-
-            <h3>3. Advertising and third parties</h3>
-
-            <p>
-                HexQuest uses Google AdMob to display advertising, including
-                banners and rewarded video ads.
-            </p>
-
-            <p>
-                The Google AdMob SDK may process information such as advertising
-                identifiers, IP address, technical device information and
-                advertising-related usage data, as applicable to the application
-                configuration, the user's region and consent choices.
-            </p>
-
-            <p>
-                For more information about how Google handles data, please see
-                the
-                <a href="https://policies.google.com/privacy"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Google Privacy Policy
-                </a>.
-            </p>
-
-
-            <h3>4. Your consent</h3>
-
-            <p>
-                During the first use, where legally required, HexQuest presents
-                an option regarding personalised advertising.
-            </p>
-
-            <p>
-                Depending on the user's region and available options, the user
-                may accept or decline personalised advertising. When personalised
-                advertising is not authorised, non-personalised ads may be shown.
-            </p>
-
-            <p>
-                Advertising and privacy options may also depend on settings and
-                consent mechanisms provided by the system or Google.
-            </p>
-
-
-            <h3>5. Children</h3>
-
-            <p>
-                HexQuest is not specifically directed at children.
-                We do not knowingly request personal information from children.
-            </p>
-
+        privacy: `<h3>1. Summary</h3>
+<p>HexQuest is a free game supported by advertising. You do not need to create an account, and the game does not require you to provide personal data to play.</p>
+<p>Game progress and preferences are stored locally on your device. Advertising is provided by Google AdMob, whose SDK may collect and share certain technical and usage data to deliver and measure ads, analyse performance and prevent fraud.</p>
+<h3>2. Data stored on your device</h3>
+<p>HexQuest stores information locally that is needed for the game to work, including:</p>
+<ul><li>High scores in Classic and Time Attack modes;</li><li>Progress in Challenges and Match-3;</li><li>Virtual coins, unlocked themes and objectives;</li><li>Sound, vibration, theme and language preferences.</li></ul>
+<p>Under the game's current operation, this information is stored locally and is not sent to a HexQuest-operated server. Retention depends on your device and operating system backup features. Uninstalling the app may delete local app data.</p>
+<h3>3. Advertising and third parties</h3>
+<p>HexQuest uses Google AdMob to display banner ads and rewarded videos.</p>
+<p>Depending on SDK configuration, region and privacy choices, data such as IP address, advertising and other device identifiers, interactions with the app and ads, and diagnostic and performance information may be collected and shared. This data may be used to deliver and measure advertising, analyse service performance and prevent fraud.</p>
+<p>For more information, see Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and the <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK privacy documentation</a>.</p>
+<h3>4. Consent and personalised advertising</h3>
+<p>Where required, the game displays a privacy message that lets you choose the applicable advertising options.</p>
+<p>Depending on the options presented, you may consent to or refuse the use of your data for personalised advertising. Refusing personalised advertising does not necessarily mean you will stop seeing ads; non-personalised or limited ads may still be shown, as applicable.</p>
+<p>Where required by applicable law or rules, you can review or withdraw your consent through the privacy options provided in the game.</p>
+<h3>5. Children</h3>
+<p>HexQuest is not specifically intended for children. We do not knowingly request children's personal data. Advertising and privacy options should be configured according to the game's intended audience and applicable legal and platform requirements.</p>
+<h3>6. Retention and security</h3>
+<p>HexQuest does not maintain user accounts or its own system for synchronising progress between devices. Recovery of local data cannot be guaranteed following data loss, device failure or uninstallation. Data processed by Google AdMob is subject to Google's security, retention and data-processing practices.</p>
+<h3>7. Rights and contact</h3>
+<p>Under applicable law, including the General Data Protection Regulation (GDPR), you may have rights to access, rectify or erase data, restrict or object to processing, and withdraw consent, as applicable to the processing concerned.</p>
+<p>For privacy questions about HexQuest, contact <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Requests concerning data processed directly by Google may need to be submitted to Google through its privacy channels.</p>
+<p>Where applicable, you may also lodge a complaint with the Portuguese Data Protection Authority (CNPD).</p>
+<h3>8. Changes to this Privacy Policy</h3>
+<p>This policy may be updated to reflect changes to the game, services used or legal obligations. The current version will be available through HexQuest's official channels and the link published on Google Play.</p>
         `,
 
-        terms: `
-
-            <h3>1. Acceptance</h3>
-
-            <p>
-                By installing and using HexQuest, you agree to these Terms of Use.
-                If you do not agree with these terms, you should not use the
-                application.
-            </p>
-
-
-            <h3>2. Licence</h3>
-
-            <p>
-                You are granted a personal, non-exclusive and non-transferable
-                licence to use HexQuest for personal entertainment purposes.
-            </p>
-
-            <p>
-                You may not copy, modify, distribute, sell, redistribute or
-                attempt to extract parts of the game, its code or its assets,
-                except where permitted by applicable law.
-            </p>
-
-
-            <h3>3. Virtual coins</h3>
-
-            <p>
-                Coins are virtual elements used within the game and have no
-                real-world monetary value.
-            </p>
-
-            <p>
-                Coins cannot be exchanged for money, transferred to other users
-                or converted into real currency.
-            </p>
-
-            <p>
-                We may adjust, remove or correct coins and other virtual elements
-                when necessary, including in cases of errors, misuse or changes
-                to the game.
-            </p>
-
-
-            <h3>4. Advertising</h3>
-
-            <p>
-                HexQuest is provided free of charge and may display advertising
-                through third-party services, including banners and rewarded
-                videos provided by Google AdMob.
-            </p>
-
-            <p>
-                Advertising content is provided by third parties. HexQuest does
-                not individually control the content displayed in each
-                advertisement and is not responsible for the content or practices
-                of third-party advertisers.
-            </p>
-
-
-            <h3>5. Intellectual property</h3>
-
-            <p>
-                The HexQuest name, graphics, code, visual elements, audio and
-                other components of the application belong to their respective
-                authors and rights holders.
-            </p>
-
-            <p>
-                These Terms do not grant the user any ownership rights over
-                those elements.
-            </p>
-
-
-            <h3>6. Limitation of liability</h3>
-
-            <p>
-                HexQuest is provided "as is".
-                Although reasonable efforts are made to keep the application
-                functional, we do not guarantee that the game will always be
-                available or completely error-free.
-            </p>
-
-            <p>
-                To the extent permitted by applicable law, we are not responsible
-                for loss of progress, data or other consequences resulting from
-                the use or inability to use the application.
-            </p>
-
-
-            <h3>7. Changes</h3>
-
-            <p>
-                We may update these Terms of Use when necessary, including due
-                to changes to the game, services used or legal requirements.
-            </p>
-
-            <p>
-                The latest version of these Terms will be made available on this
-                page and, where applicable, within the application.
-            </p>
-
+        terms: `<h3>1. Scope and acceptance</h3>
+<p>These Terms govern the use of HexQuest, a free mobile game. By installing or using the game, you agree to comply with these Terms and applicable law. If you disagree, stop using the app and you may uninstall it.</p>
+<h3>2. Licence to use</h3>
+<p>You are granted a personal, limited, non-exclusive and non-transferable licence to use HexQuest for personal, non-commercial purposes.</p>
+<p>You may not copy, modify, distribute, sell, sublicense or redistribute the game, or attempt to obtain its source code by unauthorised means, except where permitted by applicable law.</p>
+<h3>3. Virtual coins and game items</h3>
+<p>Virtual coins and other unlockable items are for use only within HexQuest. They have no real monetary value, do not represent money or credit, and cannot be exchanged or converted into money. They cannot be transferred to other players or used outside the game.</p>
+<p>HexQuest may correct inaccurate balances or adjust virtual items when necessary to correct errors, prevent fraud or ensure the proper operation of the game.</p>
+<h3>4. Advertising and rewards</h3>
+<p>HexQuest is free and supported by advertising, including banner ads and rewarded videos provided by Google AdMob.</p>
+<p>Watching rewarded videos is optional. Ad availability depends on advertising services and applicable technical and geographic conditions. Rewards are granted according to the rules shown in the game.</p>
+<p>HexQuest does not control third-party ads or their external destinations.</p>
+<h3>5. Intellectual property</h3>
+<p>The HexQuest name, graphics, visual elements, code and other game content are protected by applicable intellectual property rights and belong to their respective rights holders.</p>
+<p>Use of the game does not grant you ownership rights over its content.</p>
+<h3>6. Availability and liability</h3>
+<p>The game is provided as available and may contain errors or be temporarily unavailable due to maintenance, updates, technical limitations or third-party services.</p>
+<p>Continuous availability or recovery of local progress after data loss, device failure or uninstallation is not guaranteed. To the fullest extent permitted by law, nothing in these Terms limits mandatory consumer rights or excludes liability that cannot legally be excluded.</p>
+<h3>7. Changes and updates</h3>
+<p>The game and these Terms may be updated to fix errors, introduce features, improve security or reflect legal and technical changes. Material changes will be communicated by appropriate means where required.</p>
+<p>The current version of these Terms will be available on this page and, where applicable, in the app.</p>
+<h3>8. Applicable law</h3>
+<p>These Terms are interpreted in accordance with applicable law. Nothing in these Terms affects mandatory rights consumers may have under applicable law.</p>
+<h3>9. Contact</h3>
+<p>For questions about these Terms, contact <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
         `,
 
         footer: "© 2026 HexQuest. All rights reserved."
@@ -682,182 +384,34 @@ const translations = {
         privacyTitle: "Política de Privacidad",
         termsTitle: "Términos de Uso",
 
-        updated: "Última actualización: 4 de octubre de 2026",
+        updated: "Última actualización: 20 de octubre de 2026",
 
-        privacy: `
-
-            <h3>1. Resumen</h3>
-
-            <p>
-                HexQuest es un juego gratuito financiado mediante publicidad.
-                No es necesario crear una cuenta y no solicitamos directamente
-                información personal para utilizar el juego.
-            </p>
-
-            <p>
-                El progreso del juego se almacena localmente en el dispositivo.
-                La publicidad se proporciona mediante Google AdMob, que puede
-                procesar determinados datos técnicos y de uso para proporcionar
-                y medir anuncios, de acuerdo con sus políticas y configuraciones
-                aplicables.
-            </p>
-
-
-            <h3>2. Información almacenada en el dispositivo</h3>
-
-            <p>
-                HexQuest almacena localmente en el dispositivo la información
-                necesaria para mantener el progreso y las preferencias del
-                jugador, incluyendo:
-            </p>
-
-            <ul>
-                <li>Récords por modo de juego, incluidos Clásico y Contrarreloj;</li>
-                <li>Progreso en Desafíos y Match-3;</li>
-                <li>Monedas, temas desbloqueados y objetivos;</li>
-                <li>Preferencias de sonido y vibración;</li>
-                <li>Preferencia de tema;</li>
-                <li>Preferencia de idioma.</li>
-            </ul>
-
-            <p>
-                Esta información se almacena localmente y puede eliminarse al
-                desinstalar la aplicación o al eliminar los datos de la aplicación
-                desde los ajustes del dispositivo.
-            </p>
-
-
-            <h3>3. Publicidad y terceros</h3>
-
-            <p>
-                HexQuest utiliza Google AdMob para mostrar publicidad, incluidos
-                banners y vídeos recompensados.
-            </p>
-
-            <p>
-                El SDK de Google AdMob puede procesar información como
-                identificadores publicitarios, dirección IP, información técnica
-                del dispositivo y datos de uso relacionados con la publicidad,
-                según la configuración de la aplicación, la región del usuario
-                y las opciones de consentimiento.
-            </p>
-
-            <p>
-                Para obtener más información, consulta la
-                <a href="https://policies.google.com/privacy"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Política de Privacidad de Google
-                </a>.
-            </p>
-
-
-            <h3>4. Tu consentimiento</h3>
-
-            <p>
-                Durante el primer uso, cuando sea legalmente necesario,
-                HexQuest presenta una opción relacionada con la publicidad
-                personalizada.
-            </p>
-
-            <p>
-                Dependiendo de la región y de las opciones disponibles, el
-                usuario puede aceptar o rechazar la publicidad personalizada.
-                Cuando no se autoriza la publicidad personalizada, pueden
-                mostrarse anuncios no personalizados.
-            </p>
-
-
-            <h3>5. Niños</h3>
-
-            <p>
-                HexQuest no está dirigido específicamente a niños.
-                No solicitamos conscientemente información personal de niños.
-            </p>
-
+        privacy: `<h3>1. Resumen</h3><p>HexQuest es un juego gratuito financiado mediante publicidad. No necesitas crear una cuenta y el juego no te exige proporcionar datos personales para jugar.</p>
+<p>El progreso y las preferencias se guardan localmente en tu dispositivo. Google AdMob proporciona la publicidad y su SDK puede recopilar y compartir determinados datos técnicos y de uso para mostrar y medir anuncios, analizar el rendimiento y prevenir fraudes.</p>
+<h3>2. Datos almacenados en el dispositivo</h3><p>HexQuest guarda localmente la información necesaria para el funcionamiento del juego, incluidos:</p><ul><li>Récords en los modos Clásico y Contrarreloj;</li><li>Progreso en Desafíos y Match-3;</li><li>Monedas virtuales, temas desbloqueados y objetivos;</li><li>Preferencias de sonido, vibración, tema e idioma.</li></ul>
+<p>Según el funcionamiento actual del juego, estos datos se guardan localmente y no se envían a un servidor gestionado por HexQuest. Su conservación depende del dispositivo y de las funciones de copia de seguridad del sistema operativo. Desinstalar la aplicación puede eliminar los datos locales.</p>
+<h3>3. Publicidad y terceros</h3><p>HexQuest utiliza Google AdMob para mostrar banners y vídeos recompensados.</p>
+<p>Según la configuración del SDK, la región y las opciones de privacidad, pueden recopilarse y compartirse datos como la dirección IP, identificadores publicitarios y otros identificadores del dispositivo, interacciones con la aplicación y los anuncios, e información de diagnóstico y rendimiento. Estos datos pueden utilizarse para ofrecer y medir publicidad, analizar el rendimiento y prevenir fraudes.</p>
+<p>Más información en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a> y en la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentación de privacidad de Google Mobile Ads SDK</a>.</p>
+<h3>4. Consentimiento y anuncios personalizados</h3><p>Cuando sea necesario, el juego muestra un aviso de privacidad que permite elegir las opciones publicitarias aplicables.</p>
+<p>Según las opciones disponibles, puedes aceptar o rechazar el uso de tus datos para publicidad personalizada. Rechazarla no significa necesariamente que dejes de ver anuncios; pueden seguir mostrándose anuncios no personalizados o limitados, según corresponda.</p>
+<p>Cuando lo exijan la legislación o las normas aplicables, podrás revisar o retirar tu consentimiento mediante las opciones de privacidad disponibles en el juego.</p>
+<h3>5. Niños</h3><p>HexQuest no está destinado específicamente a niños. No solicitamos conscientemente datos personales de niños. La publicidad y las opciones de privacidad deben configurarse de acuerdo con el público al que se dirige el juego y los requisitos legales y de las plataformas aplicables.</p>
+<h3>6. Conservación y seguridad</h3><p>HexQuest no mantiene cuentas de usuario ni un sistema propio para sincronizar el progreso entre dispositivos. No se puede garantizar la recuperación de datos locales tras una pérdida de datos, un fallo del dispositivo o la desinstalación. Los datos tratados por Google AdMob están sujetos a las prácticas de seguridad, conservación y tratamiento de Google.</p>
+<h3>7. Derechos y contacto</h3><p>Conforme a la legislación aplicable, incluido el Reglamento General de Protección de Datos (RGPD), puedes tener derechos de acceso, rectificación, supresión, limitación, oposición y retirada del consentimiento, según corresponda al tratamiento.</p>
+<p>Para cuestiones de privacidad sobre HexQuest, contacta con <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Las solicitudes relativas a datos tratados directamente por Google pueden tener que dirigirse a Google mediante sus canales de privacidad.</p><p>Cuando corresponda, también puedes presentar una reclamación ante la autoridad portuguesa de protección de datos (CNPD).</p>
+<h3>8. Cambios en esta política</h3><p>Esta política puede actualizarse para reflejar cambios en el juego, los servicios utilizados o las obligaciones legales. La versión vigente estará disponible en los canales oficiales de HexQuest y en el enlace publicado en Google Play.</p>
         `,
 
-        terms: `
-
-            <h3>1. Aceptación</h3>
-
-            <p>
-                Al instalar y utilizar HexQuest, aceptas estos Términos de Uso.
-                Si no estás de acuerdo con estos términos, no debes utilizar
-                la aplicación.
-            </p>
-
-
-            <h3>2. Licencia de uso</h3>
-
-            <p>
-                Se concede una licencia personal, no exclusiva e intransferible
-                para utilizar HexQuest con fines personales y de entretenimiento.
-            </p>
-
-            <p>
-                No está permitido copiar, modificar, distribuir, vender,
-                redistribuir o intentar extraer partes del juego, su código
-                o sus recursos, salvo cuando lo permita la legislación aplicable.
-            </p>
-
-
-            <h3>3. Monedas virtuales</h3>
-
-            <p>
-                Las monedas son elementos virtuales utilizados dentro del juego
-                y no tienen valor monetario real.
-            </p>
-
-            <p>
-                Las monedas no pueden cambiarse por dinero, transferirse a otros
-                usuarios ni convertirse en moneda real.
-            </p>
-
-
-            <h3>4. Publicidad</h3>
-
-            <p>
-                HexQuest se proporciona gratuitamente y puede mostrar publicidad
-                mediante servicios de terceros, incluidos banners y vídeos
-                recompensados proporcionados por Google AdMob.
-            </p>
-
-            <p>
-                El contenido de los anuncios es proporcionado por terceros.
-                HexQuest no controla individualmente el contenido mostrado en
-                cada anuncio y no se responsabiliza del contenido o las prácticas
-                de los anunciantes externos.
-            </p>
-
-
-            <h3>5. Propiedad intelectual</h3>
-
-            <p>
-                El nombre HexQuest, los gráficos, el código, los elementos
-                visuales, el audio y otros componentes de la aplicación
-                pertenecen a sus respectivos autores y titulares de derechos.
-            </p>
-
-
-            <h3>6. Limitación de responsabilidad</h3>
-
-            <p>
-                HexQuest se proporciona "tal cual".
-                Aunque se realizan esfuerzos razonables para mantener la
-                aplicación funcional, no garantizamos que el juego esté siempre
-                disponible o completamente libre de errores.
-            </p>
-
-
-            <h3>7. Cambios</h3>
-
-            <p>
-                Podemos actualizar estos Términos de Uso cuando sea necesario,
-                incluso debido a cambios en el juego, los servicios utilizados
-                o los requisitos legales.
-            </p>
-
+        terms: `<h3>1. Ámbito y aceptación</h3><p>Estas condiciones regulan el uso de HexQuest, un juego gratuito para dispositivos móviles. Al instalar o utilizar el juego, aceptas cumplir estas condiciones y la legislación aplicable. Si no estás de acuerdo, deja de utilizar la aplicación y puedes desinstalarla.</p>
+<h3>2. Licencia de uso</h3><p>Se concede una licencia personal, limitada, no exclusiva e intransferible para utilizar HexQuest con fines personales y no comerciales.</p><p>No puedes copiar, modificar, distribuir, vender, sublicenciar ni redistribuir el juego, ni intentar obtener su código fuente por medios no autorizados, salvo cuando lo permita la legislación aplicable.</p>
+<h3>3. Monedas virtuales y elementos del juego</h3><p>Las monedas virtuales y otros elementos desbloqueables solo pueden utilizarse dentro de HexQuest. No tienen valor monetario real, no representan dinero ni crédito y no pueden canjearse ni convertirse en dinero. No pueden transferirse a otros jugadores ni utilizarse fuera del juego.</p><p>HexQuest puede corregir saldos incorrectos o ajustar elementos virtuales cuando sea necesario para corregir errores, prevenir fraudes o garantizar el funcionamiento adecuado del juego.</p>
+<h3>4. Publicidad y recompensas</h3><p>HexQuest es gratuito y se financia mediante publicidad, incluidos banners y vídeos recompensados proporcionados por Google AdMob.</p><p>Ver vídeos recompensados es opcional. La disponibilidad de anuncios depende de los servicios publicitarios y de las condiciones técnicas y geográficas aplicables. Las recompensas se conceden según las reglas mostradas en el juego.</p><p>HexQuest no controla los anuncios de terceros ni sus destinos externos.</p>
+<h3>5. Propiedad intelectual</h3><p>El nombre HexQuest, los gráficos, los elementos visuales, el código y el resto del contenido del juego están protegidos por los derechos de propiedad intelectual aplicables y pertenecen a sus respectivos titulares.</p><p>El uso del juego no te concede derechos de propiedad sobre su contenido.</p>
+<h3>6. Disponibilidad y responsabilidad</h3><p>El juego se ofrece tal como está disponible y puede contener errores o no estar disponible temporalmente por mantenimiento, actualizaciones, limitaciones técnicas o servicios de terceros.</p><p>No se garantiza la disponibilidad continua ni la recuperación del progreso local tras la pérdida de datos, un fallo del dispositivo o la desinstalación. En la máxima medida permitida por la ley, estas condiciones no limitan los derechos imperativos de los consumidores ni excluyen responsabilidades que legalmente no puedan excluirse.</p>
+<h3>7. Cambios y actualizaciones</h3><p>El juego y estas condiciones pueden actualizarse para corregir errores, añadir funciones, mejorar la seguridad o reflejar cambios legales y técnicos. Cuando sea necesario, los cambios importantes se comunicarán por medios adecuados.</p><p>La versión vigente estará disponible en esta página y, cuando corresponda, dentro de la aplicación.</p>
+<h3>8. Legislación aplicable</h3><p>Estas condiciones se interpretan conforme a la legislación aplicable. Nada de lo aquí dispuesto perjudica los derechos imperativos de los consumidores.</p>
+<h3>9. Contacto</h3><p>Para consultas sobre estas condiciones, contacta con <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
         `,
 
         footer: "© 2026 HexQuest. Todos los derechos reservados."
@@ -876,179 +430,27 @@ const translations = {
         privacyTitle: "Politique de confidentialité",
         termsTitle: "Conditions d'utilisation",
 
-        updated: "Dernière mise à jour : 4 octobre 2026",
+        updated: "Dernière mise à jour : 20 octobre 2026",
 
-        privacy: `
-
-            <h3>1. Résumé</h3>
-
-            <p>
-                HexQuest est un jeu gratuit financé par la publicité.
-                Aucun compte n'est nécessaire et nous ne demandons pas
-                directement d'informations personnelles pour utiliser le jeu.
-            </p>
-
-            <p>
-                La progression du jeu est enregistrée localement sur
-                l'appareil. La publicité est fournie par Google AdMob,
-                qui peut traiter certaines données techniques et d'utilisation
-                afin de fournir et mesurer les publicités, conformément à ses
-                politiques et paramètres applicables.
-            </p>
-
-
-            <h3>2. Informations stockées sur l'appareil</h3>
-
-            <p>
-                HexQuest stocke localement sur l'appareil les informations
-                nécessaires à la conservation de la progression et des
-                préférences du joueur, notamment :
-            </p>
-
-            <ul>
-                <li>Scores par mode de jeu, notamment Classique et Contre-la-montre ;</li>
-                <li>Progression dans les Défis et le Match-3 ;</li>
-                <li>Pièces, thèmes débloqués et objectifs ;</li>
-                <li>Préférences de son et de vibration ;</li>
-                <li>Préférence de thème ;</li>
-                <li>Préférence de langue.</li>
-            </ul>
-
-            <p>
-                Ces informations sont stockées localement et peuvent être
-                supprimées lors de la désinstallation de l'application ou
-                de la suppression de ses données dans les paramètres de
-                l'appareil.
-            </p>
-
-
-            <h3>3. Publicité et tiers</h3>
-
-            <p>
-                HexQuest utilise Google AdMob pour afficher des publicités,
-                notamment des bannières et des vidéos récompensées.
-            </p>
-
-            <p>
-                Le SDK Google AdMob peut traiter des informations telles que
-                les identifiants publicitaires, l'adresse IP, les informations
-                techniques de l'appareil et les données d'utilisation liées
-                à la publicité, selon la configuration de l'application,
-                la région de l'utilisateur et ses choix de consentement.
-            </p>
-
-            <p>
-                Pour plus d'informations, consultez la
-                <a href="https://policies.google.com/privacy"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Politique de confidentialité de Google
-                </a>.
-            </p>
-
-
-            <h3>4. Votre consentement</h3>
-
-            <p>
-                Lors de la première utilisation, lorsque la loi l'exige,
-                HexQuest présente une option concernant la publicité
-                personnalisée.
-            </p>
-
-            <p>
-                Selon la région et les options disponibles, l'utilisateur
-                peut accepter ou refuser la publicité personnalisée.
-                Lorsque la publicité personnalisée n'est pas autorisée,
-                des publicités non personnalisées peuvent être affichées.
-            </p>
-
-
-            <h3>5. Enfants</h3>
-
-            <p>
-                HexQuest ne s'adresse pas spécifiquement aux enfants.
-                Nous ne demandons pas sciemment d'informations personnelles
-                aux enfants.
-            </p>
-
+        privacy: `<h3>1. Résumé</h3><p>HexQuest est un jeu gratuit financé par la publicité. Aucun compte n'est nécessaire et le jeu ne vous demande pas de fournir des données personnelles pour jouer.</p><p>La progression et les préférences sont enregistrées localement sur votre appareil. Google AdMob fournit la publicité et son SDK peut collecter et partager certaines données techniques et d'utilisation afin de diffuser et mesurer les annonces, d'analyser les performances et de prévenir la fraude.</p>
+<h3>2. Données stockées sur l'appareil</h3><p>HexQuest stocke localement les informations nécessaires au fonctionnement du jeu, notamment :</p><ul><li>Meilleurs scores en modes Classique et Contre-la-montre ;</li><li>Progression dans les Défis et le Match-3 ;</li><li>Pièces virtuelles, thèmes débloqués et objectifs ;</li><li>Préférences de son, vibration, thème et langue.</li></ul><p>Selon le fonctionnement actuel du jeu, ces données sont stockées localement et ne sont pas envoyées à un serveur exploité par HexQuest. Leur conservation dépend de l'appareil et des fonctions de sauvegarde du système. La désinstallation peut supprimer les données locales.</p>
+<h3>3. Publicité et tiers</h3><p>HexQuest utilise Google AdMob pour afficher des bannières et des vidéos récompensées.</p><p>Selon la configuration du SDK, la région et les choix de confidentialité, des données telles que l'adresse IP, les identifiants publicitaires et autres identifiants de l'appareil, les interactions avec l'application et les annonces, ainsi que des informations de diagnostic et de performance peuvent être collectées et partagées. Elles peuvent servir à diffuser et mesurer la publicité, analyser les performances et prévenir la fraude.</p><p>Consultez la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Google</a> et la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentation de confidentialité du SDK Google Mobile Ads</a>.</p>
+<h3>4. Consentement et publicité personnalisée</h3><p>Lorsque cela est requis, le jeu affiche un message de confidentialité permettant de choisir les options publicitaires applicables.</p><p>Selon les options proposées, vous pouvez consentir ou refuser l'utilisation de vos données à des fins de publicité personnalisée. Le refus de la publicité personnalisée ne signifie pas nécessairement que vous ne verrez plus de publicités ; des annonces non personnalisées ou limitées peuvent rester affichées, selon le cas.</p><p>Lorsque la loi ou les règles applicables l'exigent, vous pouvez consulter ou retirer votre consentement via les options de confidentialité proposées dans le jeu.</p>
+<h3>5. Enfants</h3><p>HexQuest ne s'adresse pas spécifiquement aux enfants. Nous ne demandons pas sciemment de données personnelles aux enfants. La publicité et les options de confidentialité doivent être configurées conformément au public visé et aux exigences légales et des plateformes.</p>
+<h3>6. Conservation et sécurité</h3><p>HexQuest ne gère pas de comptes utilisateurs ni de système propre de synchronisation de la progression entre appareils. La récupération des données locales après une perte de données, une panne de l'appareil ou une désinstallation ne peut être garantie. Les données traitées par Google AdMob sont soumises aux pratiques de sécurité, de conservation et de traitement de Google.</p>
+<h3>7. Droits et contact</h3><p>Selon la législation applicable, notamment le RGPD, vous pouvez disposer de droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de retrait du consentement, selon le traitement concerné.</p><p>Pour toute question relative à la confidentialité de HexQuest, contactez <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Les demandes concernant les données traitées directement par Google peuvent devoir être adressées à Google via ses canaux de confidentialité.</p><p>Le cas échéant, vous pouvez également déposer une plainte auprès de l'autorité portugaise de protection des données (CNPD).</p>
+<h3>8. Modifications de la politique</h3><p>Cette politique peut être mise à jour pour refléter les changements du jeu, des services utilisés ou des obligations légales. La version en vigueur sera disponible sur les canaux officiels de HexQuest et via le lien publié sur Google Play.</p>
         `,
 
-        terms: `
-
-            <h3>1. Acceptation</h3>
-
-            <p>
-                En installant et en utilisant HexQuest, vous acceptez les
-                présentes conditions d'utilisation. Si vous n'acceptez pas
-                ces conditions, vous ne devez pas utiliser l'application.
-            </p>
-
-
-            <h3>2. Licence d'utilisation</h3>
-
-            <p>
-                Une licence personnelle, non exclusive et non transférable
-                vous est accordée pour utiliser HexQuest à des fins personnelles
-                et de divertissement.
-            </p>
-
-            <p>
-                Il est interdit de copier, modifier, distribuer, vendre,
-                redistribuer ou tenter d'extraire des parties du jeu, de son
-                code ou de ses ressources, sauf lorsque la loi applicable
-                l'autorise.
-            </p>
-
-
-            <h3>3. Pièces virtuelles</h3>
-
-            <p>
-                Les pièces sont des éléments virtuels utilisés dans le jeu et
-                n'ont aucune valeur monétaire réelle.
-            </p>
-
-            <p>
-                Les pièces ne peuvent pas être échangées contre de l'argent,
-                transférées à d'autres utilisateurs ou converties en monnaie réelle.
-            </p>
-
-
-            <h3>4. Publicité</h3>
-
-            <p>
-                HexQuest est disponible gratuitement et peut afficher des
-                publicités via des services tiers, notamment des bannières et
-                des vidéos récompensées fournies par Google AdMob.
-            </p>
-
-
-            <h3>5. Propriété intellectuelle</h3>
-
-            <p>
-                Le nom HexQuest, les graphismes, le code, les éléments visuels,
-                audio et autres composants de l'application appartiennent à
-                leurs auteurs et titulaires de droits respectifs.
-            </p>
-
-
-            <h3>6. Limitation de responsabilité</h3>
-
-            <p>
-                HexQuest est fourni « tel quel ». Bien que des efforts
-                raisonnables soient déployés pour maintenir l'application
-                fonctionnelle, nous ne garantissons pas que le jeu sera toujours
-                disponible ou totalement exempt d'erreurs.
-            </p>
-
-
-            <h3>7. Modifications</h3>
-
-            <p>
-                Nous pouvons mettre à jour les présentes conditions lorsque cela
-                est nécessaire, notamment en raison de modifications du jeu,
-                des services utilisés ou des exigences légales.
-            </p>
-
+        terms: `<h3>1. Objet et acceptation</h3><p>Les présentes conditions régissent l'utilisation de HexQuest, un jeu mobile gratuit. En installant ou en utilisant le jeu, vous acceptez de respecter ces conditions et la législation applicable. Si vous n'êtes pas d'accord, cessez d'utiliser l'application et vous pouvez la désinstaller.</p>
+<h3>2. Licence d'utilisation</h3><p>Une licence personnelle, limitée, non exclusive et non transférable vous est accordée pour utiliser HexQuest à des fins personnelles et non commerciales.</p><p>Vous ne pouvez pas copier, modifier, distribuer, vendre, sous-licencier ou redistribuer le jeu, ni tenter d'obtenir son code source par des moyens non autorisés, sauf si la loi applicable le permet.</p>
+<h3>3. Pièces virtuelles et éléments du jeu</h3><p>Les pièces virtuelles et les autres éléments à débloquer sont réservés à une utilisation dans HexQuest. Ils n'ont aucune valeur monétaire réelle, ne représentent ni argent ni crédit et ne peuvent être échangés ou convertis en argent. Ils ne peuvent pas être transférés à d'autres joueurs ni utilisés en dehors du jeu.</p><p>HexQuest peut corriger les soldes inexacts ou ajuster les éléments virtuels si nécessaire pour corriger des erreurs, prévenir la fraude ou assurer le bon fonctionnement du jeu.</p>
+<h3>4. Publicité et récompenses</h3><p>HexQuest est gratuit et financé par la publicité, notamment des bannières et des vidéos récompensées fournies par Google AdMob.</p><p>Le visionnage des vidéos récompensées est facultatif. La disponibilité des annonces dépend des services publicitaires et des conditions techniques et géographiques applicables. Les récompenses sont attribuées selon les règles affichées dans le jeu.</p><p>HexQuest ne contrôle pas les annonces de tiers ni leurs destinations externes.</p>
+<h3>5. Propriété intellectuelle</h3><p>Le nom HexQuest, les graphismes, les éléments visuels, le code et les autres contenus du jeu sont protégés par les droits de propriété intellectuelle applicables et appartiennent à leurs titulaires respectifs.</p><p>L'utilisation du jeu ne vous confère aucun droit de propriété sur son contenu.</p>
+<h3>6. Disponibilité et responsabilité</h3><p>Le jeu est fourni dans son état disponible et peut contenir des erreurs ou être temporairement indisponible en raison de maintenance, de mises à jour, de limites techniques ou de services tiers.</p><p>La disponibilité continue ou la récupération de la progression locale après une perte de données, une panne de l'appareil ou une désinstallation ne sont pas garanties. Dans toute la mesure permise par la loi, ces conditions ne limitent pas les droits impératifs des consommateurs et n'excluent aucune responsabilité qui ne peut légalement être exclue.</p>
+<h3>7. Modifications et mises à jour</h3><p>Le jeu et ces conditions peuvent être mis à jour pour corriger des erreurs, ajouter des fonctionnalités, améliorer la sécurité ou refléter des changements juridiques et techniques. Les modifications importantes seront communiquées par des moyens appropriés lorsque cela est nécessaire.</p><p>La version actuelle sera disponible sur cette page et, le cas échéant, dans l'application.</p>
+<h3>8. Droit applicable</h3><p>Ces conditions sont interprétées conformément au droit applicable. Elles ne portent pas atteinte aux droits impératifs dont bénéficient les consommateurs.</p>
+<h3>9. Contact</h3><p>Pour toute question concernant ces conditions, contactez <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
         `,
 
         footer: "© 2026 HexQuest. Tous droits réservés."
@@ -1067,168 +469,27 @@ const translations = {
         privacyTitle: "Informativa sulla privacy",
         termsTitle: "Termini di utilizzo",
 
-        updated: "Ultimo aggiornamento: 4 ottobre 2026",
+        updated: "Ultimo aggiornamento: 20 ottobre 2026",
 
-        privacy: `
-
-            <h3>1. Riepilogo</h3>
-
-            <p>
-                HexQuest è un gioco gratuito supportato dalla pubblicità.
-                Non è necessario creare un account e non richiediamo
-                direttamente informazioni personali per utilizzare il gioco.
-            </p>
-
-            <p>
-                I progressi del gioco vengono salvati localmente sul dispositivo.
-                La pubblicità è fornita tramite Google AdMob, che può elaborare
-                determinati dati tecnici e di utilizzo per fornire e misurare
-                gli annunci, secondo le proprie politiche e impostazioni applicabili.
-            </p>
-
-
-            <h3>2. Informazioni memorizzate sul dispositivo</h3>
-
-            <p>
-                HexQuest memorizza localmente sul dispositivo le informazioni
-                necessarie per mantenere i progressi e le preferenze del giocatore,
-                tra cui:
-            </p>
-
-            <ul>
-                <li>Punteggi per modalità di gioco, inclusi Classica e Contro il tempo;</li>
-                <li>Progressi nelle Sfide e nel Match-3;</li>
-                <li>Monete, temi sbloccati e obiettivi;</li>
-                <li>Preferenze audio e vibrazione;</li>
-                <li>Preferenza del tema;</li>
-                <li>Preferenza della lingua.</li>
-            </ul>
-
-            <p>
-                Queste informazioni sono memorizzate localmente e possono essere
-                eliminate disinstallando l'applicazione o cancellando i dati
-                dell'applicazione dalle impostazioni del dispositivo.
-            </p>
-
-
-            <h3>3. Pubblicità e terze parti</h3>
-
-            <p>
-                HexQuest utilizza Google AdMob per mostrare pubblicità, inclusi
-                banner e video con ricompensa.
-            </p>
-
-            <p>
-                L'SDK Google AdMob può elaborare informazioni quali identificatori
-                pubblicitari, indirizzo IP, informazioni tecniche del dispositivo
-                e dati di utilizzo relativi alla pubblicità, a seconda della
-                configurazione dell'applicazione, della regione dell'utente e
-                delle scelte relative al consenso.
-            </p>
-
-            <p>
-                Per ulteriori informazioni, consulta
-                <a href="https://policies.google.com/privacy"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   l'Informativa sulla privacy di Google
-                </a>.
-            </p>
-
-
-            <h3>4. Il tuo consenso</h3>
-
-            <p>
-                Al primo utilizzo, quando richiesto dalla legge, HexQuest
-                presenta un'opzione relativa alla pubblicità personalizzata.
-            </p>
-
-            <p>
-                A seconda della regione e delle opzioni disponibili, l'utente
-                può accettare o rifiutare la pubblicità personalizzata.
-                Quando la pubblicità personalizzata non è autorizzata,
-                possono essere mostrati annunci non personalizzati.
-            </p>
-
-
-            <h3>5. Minori</h3>
-
-            <p>
-                HexQuest non è specificamente rivolto ai bambini.
-                Non richiediamo consapevolmente informazioni personali ai bambini.
-            </p>
-
+        privacy: `<h3>1. Riepilogo</h3><p>HexQuest è un gioco gratuito supportato dalla pubblicità. Non è necessario creare un account e il gioco non richiede dati personali per giocare.</p><p>I progressi e le preferenze vengono salvati localmente sul dispositivo. La pubblicità è fornita da Google AdMob, il cui SDK può raccogliere e condividere alcuni dati tecnici e di utilizzo per mostrare e misurare gli annunci, analizzare le prestazioni e prevenire le frodi.</p>
+<h3>2. Dati salvati sul dispositivo</h3><p>HexQuest salva localmente le informazioni necessarie al funzionamento del gioco, tra cui:</p><ul><li>Record nelle modalità Classica e Contro il tempo;</li><li>Progressi nelle Sfide e nel Match-3;</li><li>Monete virtuali, temi sbloccati e obiettivi;</li><li>Preferenze di audio, vibrazione, tema e lingua.</li></ul><p>Secondo il funzionamento attuale del gioco, questi dati sono salvati localmente e non vengono inviati a un server gestito da HexQuest. La conservazione dipende dal dispositivo e dalle funzioni di backup del sistema operativo. La disinstallazione può eliminare i dati locali.</p>
+<h3>3. Pubblicità e terze parti</h3><p>HexQuest utilizza Google AdMob per mostrare banner e video con ricompensa.</p><p>A seconda della configurazione dell'SDK, della regione e delle scelte sulla privacy, possono essere raccolti e condivisi dati quali indirizzo IP, identificatori pubblicitari e altri identificatori del dispositivo, interazioni con l'app e gli annunci e informazioni diagnostiche e sulle prestazioni. Questi dati possono essere utilizzati per fornire e misurare la pubblicità, analizzare le prestazioni e prevenire le frodi.</p><p>Consulta l'<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Informativa sulla privacy di Google</a> e la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentazione sulla privacy di Google Mobile Ads SDK</a>.</p>
+<h3>4. Consenso e pubblicità personalizzata</h3><p>Quando richiesto, il gioco mostra un'informativa che consente di scegliere le opzioni pubblicitarie applicabili.</p><p>A seconda delle opzioni disponibili, puoi acconsentire o rifiutare l'utilizzo dei tuoi dati per la pubblicità personalizzata. Il rifiuto non significa necessariamente che non vedrai più annunci: possono essere mostrati annunci non personalizzati o limitati, ove applicabile.</p><p>Quando richiesto dalla legge o dalle regole applicabili, puoi rivedere o revocare il consenso tramite le opzioni sulla privacy disponibili nel gioco.</p>
+<h3>5. Minori</h3><p>HexQuest non è specificamente destinato ai bambini. Non richiediamo consapevolmente dati personali dei bambini. La pubblicità e le opzioni sulla privacy devono essere configurate in base al pubblico previsto e ai requisiti legali e delle piattaforme.</p>
+<h3>6. Conservazione e sicurezza</h3><p>HexQuest non gestisce account utente né un proprio sistema di sincronizzazione dei progressi tra dispositivi. Non è possibile garantire il recupero dei dati locali dopo perdita di dati, guasto del dispositivo o disinstallazione. I dati trattati da Google AdMob sono soggetti alle pratiche di sicurezza, conservazione e trattamento di Google.</p>
+<h3>7. Diritti e contatti</h3><p>In base alla legge applicabile, incluso il GDPR, potresti avere diritti di accesso, rettifica, cancellazione, limitazione, opposizione e revoca del consenso, secondo il trattamento interessato.</p><p>Per domande sulla privacy di HexQuest, contatta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Le richieste relative ai dati trattati direttamente da Google potrebbero dover essere inviate a Google tramite i suoi canali privacy.</p><p>Ove applicabile, puoi anche presentare un reclamo all'autorità portoghese per la protezione dei dati (CNPD).</p>
+<h3>8. Modifiche all'informativa</h3><p>Questa informativa può essere aggiornata per riflettere modifiche al gioco, ai servizi utilizzati o agli obblighi legali. La versione vigente sarà disponibile sui canali ufficiali di HexQuest e tramite il link pubblicato su Google Play.</p>
         `,
 
-        terms: `
-
-            <h3>1. Accettazione</h3>
-
-            <p>
-                Installando e utilizzando HexQuest, accetti i presenti Termini
-                di utilizzo. Se non accetti questi termini, non devi utilizzare
-                l'applicazione.
-            </p>
-
-
-            <h3>2. Licenza d'uso</h3>
-
-            <p>
-                Ti viene concessa una licenza personale, non esclusiva e non
-                trasferibile per utilizzare HexQuest per scopi personali e
-                di intrattenimento.
-            </p>
-
-
-            <h3>3. Monete virtuali</h3>
-
-            <p>
-                Le monete sono elementi virtuali utilizzati nel gioco e non
-                hanno valore monetario reale.
-            </p>
-
-            <p>
-                Le monete non possono essere scambiate con denaro, trasferite
-                ad altri utenti o convertite in valuta reale.
-            </p>
-
-
-            <h3>4. Pubblicità</h3>
-
-            <p>
-                HexQuest è disponibile gratuitamente e può mostrare pubblicità
-                tramite servizi di terze parti, inclusi banner e video con
-                ricompensa forniti da Google AdMob.
-            </p>
-
-
-            <h3>5. Proprietà intellettuale</h3>
-
-            <p>
-                Il nome HexQuest, la grafica, il codice, gli elementi visivi,
-                l'audio e gli altri componenti dell'applicazione appartengono
-                ai rispettivi autori e titolari dei diritti.
-            </p>
-
-
-            <h3>6. Limitazione di responsabilità</h3>
-
-            <p>
-                HexQuest viene fornito "così com'è".
-                Sebbene vengano compiuti sforzi ragionevoli per mantenere
-                l'applicazione funzionante, non garantiamo che il gioco sia
-                sempre disponibile o completamente privo di errori.
-            </p>
-
-
-            <h3>7. Modifiche</h3>
-
-            <p>
-                Possiamo aggiornare i presenti Termini di utilizzo quando
-                necessario, anche a seguito di modifiche al gioco, ai servizi
-                utilizzati o ai requisiti legali.
-            </p>
-
+        terms: `<h3>1. Ambito e accettazione</h3><p>Questi Termini regolano l'utilizzo di HexQuest, un gioco gratuito per dispositivi mobili. Installando o utilizzando il gioco, accetti di rispettare questi Termini e la legge applicabile. Se non sei d'accordo, interrompi l'utilizzo e puoi disinstallare l'applicazione.</p>
+<h3>2. Licenza d'uso</h3><p>È concessa una licenza personale, limitata, non esclusiva e non trasferibile per utilizzare HexQuest per scopi personali e non commerciali.</p><p>Non puoi copiare, modificare, distribuire, vendere, concedere in sublicenza o ridistribuire il gioco, né tentare di ottenere il codice sorgente con mezzi non autorizzati, salvo quanto consentito dalla legge applicabile.</p>
+<h3>3. Monete virtuali ed elementi di gioco</h3><p>Le monete virtuali e gli altri elementi sbloccabili sono utilizzabili esclusivamente all'interno di HexQuest. Non hanno valore monetario reale, non rappresentano denaro o credito e non possono essere scambiati o convertiti in denaro. Non possono essere trasferiti ad altri giocatori né utilizzati fuori dal gioco.</p><p>HexQuest può correggere saldi errati o modificare elementi virtuali quando necessario per correggere errori, prevenire frodi o garantire il corretto funzionamento del gioco.</p>
+<h3>4. Pubblicità e ricompense</h3><p>HexQuest è gratuito ed è finanziato dalla pubblicità, inclusi banner e video con ricompensa forniti da Google AdMob.</p><p>La visualizzazione dei video con ricompensa è facoltativa. La disponibilità degli annunci dipende dai servizi pubblicitari e dalle condizioni tecniche e geografiche applicabili. Le ricompense vengono assegnate secondo le regole mostrate nel gioco.</p><p>HexQuest non controlla gli annunci di terze parti né le relative destinazioni esterne.</p>
+<h3>5. Proprietà intellettuale</h3><p>Il nome HexQuest, la grafica, gli elementi visivi, il codice e gli altri contenuti del gioco sono protetti dai diritti di proprietà intellettuale applicabili e appartengono ai rispettivi titolari.</p><p>L'utilizzo del gioco non concede diritti di proprietà sui suoi contenuti.</p>
+<h3>6. Disponibilità e responsabilità</h3><p>Il gioco è fornito nello stato in cui è disponibile e può contenere errori o risultare temporaneamente indisponibile a causa di manutenzione, aggiornamenti, limiti tecnici o servizi di terze parti.</p><p>Non è garantita la disponibilità continua né il recupero dei progressi locali dopo perdita di dati, guasto del dispositivo o disinstallazione. Nella misura massima consentita dalla legge, questi Termini non limitano i diritti inderogabili dei consumatori né escludono responsabilità che non possono essere legalmente escluse.</p>
+<h3>7. Modifiche e aggiornamenti</h3><p>Il gioco e questi Termini possono essere aggiornati per correggere errori, introdurre funzionalità, migliorare la sicurezza o riflettere cambiamenti legali e tecnici. Le modifiche sostanziali saranno comunicate con mezzi appropriati ove necessario.</p><p>La versione vigente sarà disponibile su questa pagina e, ove applicabile, nell'applicazione.</p>
+<h3>8. Legge applicabile</h3><p>Questi Termini sono interpretati secondo la legge applicabile e non pregiudicano i diritti inderogabili riconosciuti ai consumatori.</p>
+<h3>9. Contatti</h3><p>Per domande su questi Termini, contatta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
         `,
 
         footer: "© 2026 HexQuest. Tutti i diritti riservati."
@@ -1247,175 +508,27 @@ const translations = {
         privacyTitle: "Datenschutzerklärung",
         termsTitle: "Nutzungsbedingungen",
 
-        updated: "Letzte Aktualisierung: 4. Oktober 2026",
+        updated: "Letzte Aktualisierung: 20. Oktober 2026",
 
-        privacy: `
-
-            <h3>1. Zusammenfassung</h3>
-
-            <p>
-                HexQuest ist ein kostenloses, werbefinanziertes Spiel.
-                Es ist kein Konto erforderlich und wir fordern keine
-                personenbezogenen Daten direkt zur Nutzung des Spiels an.
-            </p>
-
-            <p>
-                Der Spielfortschritt wird lokal auf dem Gerät gespeichert.
-                Werbung wird über Google AdMob bereitgestellt, das bestimmte
-                technische Daten und Nutzungsdaten zur Bereitstellung und
-                Messung von Werbung gemäß den geltenden Richtlinien und
-                Einstellungen verarbeiten kann.
-            </p>
-
-
-            <h3>2. Auf dem Gerät gespeicherte Informationen</h3>
-
-            <p>
-                HexQuest speichert lokal auf dem Gerät Informationen, die zur
-                Speicherung des Spielfortschritts und der Spielereinstellungen
-                erforderlich sind, darunter:
-            </p>
-
-            <ul>
-                <li>Bestleistungen nach Spielmodus, einschließlich Klassisch und Zeitangriff;</li>
-                <li>Fortschritt bei Herausforderungen und Match-3;</li>
-                <li>Münzen, freigeschaltete Designs und Ziele;</li>
-                <li>Ton- und Vibrationseinstellungen;</li>
-                <li>Design-Einstellung;</li>
-                <li>Spracheinstellung.</li>
-            </ul>
-
-            <p>
-                Diese Informationen werden lokal gespeichert und können durch
-                Deinstallation der Anwendung oder Löschen der App-Daten in den
-                Geräteeinstellungen entfernt werden.
-            </p>
-
-
-            <h3>3. Werbung und Drittanbieter</h3>
-
-            <p>
-                HexQuest verwendet Google AdMob zur Anzeige von Werbung,
-                einschließlich Bannern und belohnten Videowerbungen.
-            </p>
-
-            <p>
-                Das Google-AdMob-SDK kann Informationen wie Werbe-IDs, IP-Adresse,
-                technische Geräteinformationen und werbebezogene Nutzungsdaten
-                verarbeiten, abhängig von der Konfiguration der Anwendung,
-                der Region des Nutzers und den Einwilligungsentscheidungen.
-            </p>
-
-            <p>
-                Weitere Informationen findest du in der
-                <a href="https://policies.google.com/privacy"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Datenschutzerklärung von Google
-                </a>.
-            </p>
-
-
-            <h3>4. Deine Einwilligung</h3>
-
-            <p>
-                Bei der ersten Nutzung zeigt HexQuest, sofern gesetzlich
-                erforderlich, eine Option für personalisierte Werbung an.
-            </p>
-
-            <p>
-                Je nach Region und verfügbaren Optionen kann der Nutzer
-                personalisierte Werbung akzeptieren oder ablehnen. Wenn
-                personalisierte Werbung nicht erlaubt ist, können nicht
-                personalisierte Anzeigen angezeigt werden.
-            </p>
-
-
-            <h3>5. Kinder</h3>
-
-            <p>
-                HexQuest richtet sich nicht speziell an Kinder.
-                Wir fordern wissentlich keine personenbezogenen Daten von
-                Kindern an.
-            </p>
-
+        privacy: `<h3>1. Zusammenfassung</h3><p>HexQuest ist ein kostenloses, werbefinanziertes Spiel. Du musst kein Konto erstellen und das Spiel verlangt keine personenbezogenen Daten, um gespielt zu werden.</p><p>Spielstand und Einstellungen werden lokal auf deinem Gerät gespeichert. Google AdMob stellt die Werbung bereit; dessen SDK kann bestimmte technische Daten und Nutzungsdaten erfassen und weitergeben, um Anzeigen auszuliefern und zu messen, die Leistung zu analysieren und Betrug zu verhindern.</p>
+<h3>2. Auf dem Gerät gespeicherte Daten</h3><p>HexQuest speichert lokal die für das Spiel erforderlichen Informationen, darunter:</p><ul><li>Bestleistungen in den Modi Klassisch und Zeitangriff;</li><li>Fortschritt bei Herausforderungen und Match-3;</li><li>Virtuelle Münzen, freigeschaltete Designs und Ziele;</li><li>Einstellungen für Ton, Vibration, Design und Sprache.</li></ul><p>Nach der aktuellen Funktionsweise werden diese Daten lokal gespeichert und nicht an einen von HexQuest betriebenen Server gesendet. Die Aufbewahrung hängt vom Gerät und den Sicherungsfunktionen des Betriebssystems ab. Bei der Deinstallation können lokale App-Daten gelöscht werden.</p>
+<h3>3. Werbung und Drittanbieter</h3><p>HexQuest verwendet Google AdMob für Bannerwerbung und Videos mit Belohnung.</p><p>Abhängig von SDK-Konfiguration, Region und Datenschutzeinstellungen können Daten wie IP-Adresse, Werbe- und andere Gerätekennungen, Interaktionen mit der App und Anzeigen sowie Diagnose- und Leistungsdaten erfasst und weitergegeben werden. Diese Daten können zur Bereitstellung und Messung von Werbung, Leistungsanalyse und Betrugsprävention verwendet werden.</p><p>Weitere Informationen findest du in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Google</a> und in der <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Datenschutzdokumentation des Google Mobile Ads SDK</a>.</p>
+<h3>4. Einwilligung und personalisierte Werbung</h3><p>Wenn erforderlich, zeigt das Spiel einen Datenschutzhinweis an, über den du die zutreffenden Werbeoptionen auswählen kannst.</p><p>Je nach verfügbaren Optionen kannst du der Verwendung deiner Daten für personalisierte Werbung zustimmen oder sie ablehnen. Die Ablehnung bedeutet nicht unbedingt, dass keine Werbung mehr angezeigt wird; gegebenenfalls können nicht personalisierte oder eingeschränkte Anzeigen erscheinen.</p><p>Soweit gesetzlich oder nach geltenden Regeln erforderlich, kannst du deine Einwilligung über die im Spiel verfügbaren Datenschutzoptionen überprüfen oder widerrufen.</p>
+<h3>5. Kinder</h3><p>HexQuest richtet sich nicht speziell an Kinder. Wir fordern wissentlich keine personenbezogenen Daten von Kindern an. Werbung und Datenschutzoptionen müssen entsprechend der Zielgruppe und den geltenden gesetzlichen und Plattformanforderungen konfiguriert werden.</p>
+<h3>6. Aufbewahrung und Sicherheit</h3><p>HexQuest führt keine Benutzerkonten und betreibt kein eigenes System zur Synchronisierung des Spielfortschritts zwischen Geräten. Die Wiederherstellung lokaler Daten nach Datenverlust, Geräteausfall oder Deinstallation kann nicht garantiert werden. Für von Google AdMob verarbeitete Daten gelten die Sicherheits-, Aufbewahrungs- und Datenverarbeitungspraktiken von Google.</p>
+<h3>7. Rechte und Kontakt</h3><p>Nach geltendem Recht, einschließlich der DSGVO, können dir je nach Verarbeitung Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Widerruf der Einwilligung zustehen.</p><p>Bei Datenschutzfragen zu HexQuest kontaktiere <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Anfragen zu Daten, die direkt von Google verarbeitet werden, müssen gegebenenfalls über die Datenschutzkanäle von Google gestellt werden.</p><p>Soweit zutreffend, kannst du dich auch bei der portugiesischen Datenschutzbehörde (CNPD) beschweren.</p>
+<h3>8. Änderungen dieser Datenschutzerklärung</h3><p>Diese Erklärung kann aktualisiert werden, um Änderungen am Spiel, an genutzten Diensten oder an gesetzlichen Pflichten zu berücksichtigen. Die aktuelle Version ist über die offiziellen HexQuest-Kanäle und den auf Google Play veröffentlichten Link verfügbar.</p>
         `,
 
-        terms: `
-
-            <h3>1. Zustimmung</h3>
-
-            <p>
-                Durch die Installation und Nutzung von HexQuest stimmst du
-                diesen Nutzungsbedingungen zu. Wenn du diesen Bedingungen
-                nicht zustimmst, darfst du die Anwendung nicht verwenden.
-            </p>
-
-
-            <h3>2. Nutzungslizenz</h3>
-
-            <p>
-                Dir wird eine persönliche, nicht exklusive und nicht übertragbare
-                Lizenz zur Nutzung von HexQuest für persönliche Unterhaltungszwecke
-                gewährt.
-            </p>
-
-            <p>
-                Das Kopieren, Ändern, Verteilen, Verkaufen oder Weiterverbreiten
-                des Spiels, seines Codes oder seiner Bestandteile ist nicht
-                gestattet, soweit dies nicht gesetzlich erlaubt ist.
-            </p>
-
-
-            <h3>3. Virtuelle Münzen</h3>
-
-            <p>
-                Münzen sind virtuelle Elemente innerhalb des Spiels und besitzen
-                keinen echten Geldwert.
-            </p>
-
-            <p>
-                Münzen können nicht gegen Geld eingetauscht, an andere Nutzer
-                übertragen oder in echte Währung umgewandelt werden.
-            </p>
-
-
-            <h3>4. Werbung</h3>
-
-            <p>
-                HexQuest wird kostenlos angeboten und kann Werbung über
-                Drittanbieterdienste anzeigen, einschließlich Bannern und
-                belohnten Videos von Google AdMob.
-            </p>
-
-
-            <h3>5. Geistiges Eigentum</h3>
-
-            <p>
-                Der Name HexQuest, die Grafiken, der Code, visuelle Elemente,
-                Audio und andere Bestandteile der Anwendung gehören ihren
-                jeweiligen Autoren und Rechteinhabern.
-            </p>
-
-
-            <h3>6. Haftungsbeschränkung</h3>
-
-            <p>
-                HexQuest wird "wie besehen" bereitgestellt.
-                Obwohl angemessene Anstrengungen unternommen werden, um die
-                Anwendung funktionsfähig zu halten, wird nicht garantiert,
-                dass das Spiel jederzeit verfügbar oder vollständig fehlerfrei ist.
-            </p>
-
-
-            <h3>7. Änderungen</h3>
-
-            <p>
-                Wir können diese Nutzungsbedingungen bei Bedarf aktualisieren,
-                insbesondere aufgrund von Änderungen am Spiel, den verwendeten
-                Diensten oder gesetzlichen Anforderungen.
-            </p>
-
+        terms: `<h3>1. Geltungsbereich und Zustimmung</h3><p>Diese Bedingungen regeln die Nutzung von HexQuest, einem kostenlosen Mobilspiel. Mit der Installation oder Nutzung des Spiels erklärst du dich mit diesen Bedingungen und geltendem Recht einverstanden. Wenn du nicht einverstanden bist, nutze die App nicht weiter und deinstalliere sie gegebenenfalls.</p>
+<h3>2. Nutzungslizenz</h3><p>Du erhältst eine persönliche, beschränkte, nicht ausschließliche und nicht übertragbare Lizenz zur privaten, nicht kommerziellen Nutzung von HexQuest.</p><p>Du darfst das Spiel nicht kopieren, ändern, verbreiten, verkaufen, unterlizenzieren oder weiterverbreiten und nicht versuchen, den Quellcode auf unbefugte Weise zu erlangen, soweit dies nicht gesetzlich erlaubt ist.</p>
+<h3>3. Virtuelle Münzen und Spielelemente</h3><p>Virtuelle Münzen und andere freischaltbare Elemente dürfen ausschließlich innerhalb von HexQuest verwendet werden. Sie haben keinen realen Geldwert, stellen weder Geld noch Guthaben dar und können nicht gegen Geld eingetauscht oder in Geld umgewandelt werden. Sie dürfen nicht an andere Spieler übertragen oder außerhalb des Spiels verwendet werden.</p><p>HexQuest kann fehlerhafte Guthaben korrigieren oder virtuelle Elemente anpassen, wenn dies zur Fehlerkorrektur, Betrugsprävention oder zum ordnungsgemäßen Betrieb des Spiels erforderlich ist.</p>
+<h3>4. Werbung und Belohnungen</h3><p>HexQuest ist kostenlos und wird durch Werbung finanziert, darunter Banner und belohnte Videos von Google AdMob.</p><p>Das Ansehen belohnter Videos ist freiwillig. Die Verfügbarkeit von Anzeigen hängt von Werbediensten sowie den geltenden technischen und geografischen Bedingungen ab. Belohnungen werden nach den im Spiel angezeigten Regeln vergeben.</p><p>HexQuest kontrolliert weder Werbung Dritter noch deren externe Zielseiten.</p>
+<h3>5. Geistiges Eigentum</h3><p>Der Name HexQuest, Grafiken, visuelle Elemente, Code und sonstige Spielinhalte sind durch geltende Rechte des geistigen Eigentums geschützt und gehören den jeweiligen Rechteinhabern.</p><p>Die Nutzung des Spiels überträgt dir keine Eigentumsrechte an den Inhalten.</p>
+<h3>6. Verfügbarkeit und Haftung</h3><p>Das Spiel wird in der jeweils verfügbaren Form bereitgestellt und kann Fehler enthalten oder aufgrund von Wartung, Updates, technischen Einschränkungen oder Drittanbieterdiensten vorübergehend nicht verfügbar sein.</p><p>Eine ununterbrochene Verfügbarkeit oder die Wiederherstellung lokaler Spielstände nach Datenverlust, Geräteausfall oder Deinstallation wird nicht garantiert. Soweit gesetzlich zulässig, schränken diese Bedingungen keine zwingenden Verbraucherrechte ein und schließen keine Haftung aus, die gesetzlich nicht ausgeschlossen werden darf.</p>
+<h3>7. Änderungen und Aktualisierungen</h3><p>Das Spiel und diese Bedingungen können aktualisiert werden, um Fehler zu beheben, Funktionen hinzuzufügen, die Sicherheit zu verbessern oder rechtliche und technische Änderungen zu berücksichtigen. Wesentliche Änderungen werden, soweit erforderlich, auf geeignete Weise mitgeteilt.</p><p>Die aktuelle Fassung ist auf dieser Seite und gegebenenfalls in der App verfügbar.</p>
+<h3>8. Anwendbares Recht</h3><p>Diese Bedingungen unterliegen dem anwendbaren Recht. Zwingende Verbraucherrechte bleiben unberührt.</p>
+<h3>9. Kontakt</h3><p>Bei Fragen zu diesen Bedingungen kontaktiere <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
         `,
 
         footer: "© 2026 HexQuest. Alle Rechte vorbehalten."
@@ -1502,4 +615,3 @@ setLanguage(detectLanguage());
 
 </body>
 </html>
-```
