@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-    <meta name="google-site-verification" content="vgKlhW9KOKJUn39znfmCE5CQ1i7cqiw2-_woZds29oM" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,12 +11,12 @@
 
     <style>
         :root {
-            --bg: #f5f6fa;
+            --bg: #edf4fc;
             --card: #ffffff;
-            --text: #202124;
-            --secondary: #5f6368;
-            --accent: #5b4bdb;
-            --border: #e1e3e8;
+            --text: #182b43;
+            --secondary: #59718c;
+            --accent: #2469bd;
+            --border: #d4e3f3;
         }
 
         * {
@@ -153,6 +152,12 @@
                 font-size: 13px;
             }
         }
+        #privacyContent table { width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; }
+        #privacyContent th, #privacyContent td { padding:10px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+        #privacyContent th { color:var(--secondary); }
+        #privacyContent h4 { color:var(--accent); }
+        #privacyContent { overflow-wrap:anywhere; }
+        @media(max-width:600px) { #privacyContent table { display:block; overflow-x:auto; } }
     </style>
 </head>
 
@@ -183,6 +188,7 @@
     </div>
 
     <nav>
+<a href="index.html" style="margin-right:12px">⌂ Home</a>
         <a href="#privacy" id="navPrivacy">Privacidade</a>
         <a href="#terms" id="navTerms">Termos</a>
     </nav>
@@ -197,7 +203,7 @@
         <h2 id="privacyTitle">Política de Privacidade</h2>
 
         <p class="updated" id="privacyDate">
-            Última atualização: 4 de novembro de 2026
+            Última atualização: 7 de novembro de 2026
         </p>
 
         <div id="privacyContent"></div>
@@ -210,7 +216,7 @@
         <h2 id="termsTitle">Termos de Utilização</h2>
 
         <p class="updated" id="termsDate">
-            Última atualização: 4 de novembro de 2026
+            Última atualização: 7 de novembro de 2026
         </p>
 
         <div id="termsContent"></div>
@@ -241,35 +247,97 @@ const translations = {
         privacyTitle: "Política de Privacidade",
         termsTitle: "Termos de Utilização",
 
-        updated: "Última atualização: 4 de novembro de 2026",
+        updated: "Última atualização: 7 de novembro de 2026",
 
-        privacy: `<h3>1. Resumo</h3>
-<p>O HexQuest é um jogo gratuito suportado por publicidade. Não precisas de criar uma conta e o jogo não exige que forneças dados pessoais para jogar.</p>
-<p>O progresso e as preferências são guardados localmente no dispositivo. A publicidade é fornecida pelo Google AdMob, cujo SDK pode recolher e partilhar determinados dados técnicos e de utilização para apresentar e medir anúncios, analisar o desempenho e prevenir fraudes.</p>
+        privacy: `<p>Esta política explica que dados são tratados pela aplicação <strong>HexQuest</strong>
+  (<code>com.hexquest.game</code>), publicada no Google Play, e por que meios.</p>
+<h3>1. Resumo</h3>
+<p>O HexQuest é um jogo gratuito suportado por publicidade. Não precisas de criar uma conta e
+  o jogo não exige que forneças dados pessoais para jogar.</p>
+<p>O teu progresso e as tuas preferências são guardados localmente no dispositivo. A publicidade
+  é fornecida pelo Google AdMob, cujo SDK pode recolher e partilhar determinados dados técnicos e
+  de utilização para apresentar e medir anúncios, analisar o desempenho e prevenir fraudes.</p>
 <h3>2. Dados guardados no dispositivo</h3>
 <p>O HexQuest guarda localmente informações necessárias ao funcionamento do jogo, incluindo:</p>
-<ul><li>Recordes nos modos Clássico e Contra o Tempo;</li><li>Progresso nos Desafios e no Match-3;</li><li>Moedas virtuais, temas desbloqueados e objetivos;</li><li>Preferências de som, vibração, tema e idioma.</li></ul>
-<p>Estes dados são guardados localmente e não são enviados para um servidor próprio do HexQuest, de acordo com o funcionamento atual do jogo. A conservação depende do dispositivo e das funcionalidades de cópia de segurança do sistema operativo. A desinstalação pode eliminar os dados locais da aplicação.</p>
-<h3>3. Publicidade e terceiros</h3>
-<p>O HexQuest utiliza o Google AdMob para apresentar banners e vídeos recompensados.</p>
-<p>Consoante a configuração do SDK, a região e as escolhas de privacidade, podem ser recolhidos e partilhados dados como o endereço IP, identificadores de publicidade e outros identificadores do dispositivo, interações com a aplicação e os anúncios, e informações de diagnóstico e desempenho. Estes dados podem ser utilizados para disponibilizar e medir publicidade, analisar o desempenho dos serviços e prevenir fraudes.</p>
-<p>Para mais informações, consulta a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade da Google</a> e a <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentação de privacidade do Google Mobile Ads SDK</a>.</p>
+<ul>
+<li>Recordes nos modos Clássico e Contra o Tempo;</li>
+<li>Progresso nos Desafios e no Match-3;</li>
+<li>Moedas virtuais, temas desbloqueados e objetivos;</li>
+<li>Preferências de som, vibração, tema e idioma.</li>
+</ul>
+<p>O progresso, moedas e preferências ficam no dispositivo. A exceção é o recorde do Clássico e a identificação gerada para o ranking Firebase. Desinstalar pode eliminar os dados locais.</p>
+<h3>3. Publicidade e serviços de terceiros</h3>
+<p>O HexQuest apresenta anúncios através do Google AdMob e de Unity Ads por mediação. Estes SDKs podem tratar endereço IP, identificadores do dispositivo, interações com anúncios e diagnósticos para publicidade, medição e prevenção de fraude, conforme as escolhas de privacidade.</p>
+<p><a href="https://unity.com/legal/privacy-policy">Unity Ads privacy</a> · <a href="https://docs.unity.com/en-us/ads-android/4.21.0/privacy/developer-consent/disclosures/google-data-safety">Unity Ads data disclosure</a></p>
+<p>O HexQuest utiliza o <strong>Google AdMob</strong> (Google Mobile Ads SDK 25.5.0) para
+  apresentar banners e vídeos recompensados. O SDK de anúncios é um componente de terceiros
+  incluído na aplicação e recolhe e partilha dados por conta própria.</p>
+<h4>3.1 Dados tratados pelo SDK de anúncios</h4>
+<p>De acordo com a documentação oficial do Google Mobile Ads SDK, o SDK recolhe e partilha
+  automaticamente os seguintes tipos de dados, para publicidade, análise e prevenção de fraudes:</p>
+<table>
+<thead>
+<tr><th>Tipo de dado</th><th>Finalidade</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endereço IP</strong></td>
+<td>Pode ser utilizado para estimar a localização geral do dispositivo.</td>
+</tr>
+<tr>
+<td><strong>Interações com o produto</strong></td>
+<td>Interações e informações de utilização, incluindo abertura da app, toques e visualizações de vídeos.</td>
+</tr>
+<tr>
+<td><strong>Informação de diagnóstico</strong></td>
+<td>Dados de desempenho da app e do SDK, incluindo tempo de arranque, taxa de bloqueios e consumo de energia.</td>
+</tr>
+<tr>
+<td><strong>Identificadores do dispositivo e da conta</strong></td>
+<td>ID de publicidade do Android, app set ID e, quando aplicável, outros identificadores associados a contas com sessão iniciada no dispositivo.</td>
+</tr>
+</tbody>
+</table>
+<p>Todos os dados recolhidos pelo Google Mobile Ads SDK são <strong>encriptados em trânsito</strong>
+  (TLS). O ID de publicidade pode ser reposto ou eliminado nas definições do Android.</p>
+<p>Estes dados podem ser utilizados para disponibilizar e medir publicidade, analisar o
+  desempenho dos serviços e prevenir fraudes. O tratamento é efetuado de acordo com as políticas e
+  práticas da Google e com as opções de privacidade aplicáveis. O HexQuest não controla os anúncios
+  apresentados pelos anunciantes nem os respetivos destinos externos.</p>
+<p>Mais informação: <a href="https://policies.google.com/privacy">Política de Privacidade da
+  Google</a> e <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google
+  Play data disclosure — Google Mobile Ads SDK</a>.</p>
 <h3>4. Consentimento e anúncios personalizados</h3>
-<p>Quando exigido, o jogo apresenta uma mensagem de privacidade que permite escolher as opções aplicáveis à publicidade.</p>
-<p>Consoante as opções disponibilizadas, podes consentir ou recusar a utilização dos teus dados para publicidade personalizada. A recusa de publicidade personalizada não significa necessariamente que deixes de ver anúncios: poderão continuar a ser apresentados anúncios não personalizados ou anúncios limitados, conforme as condições aplicáveis.</p>
-<p>Quando a legislação ou as regras aplicáveis o exigirem, poderás rever ou retirar o consentimento através das opções de privacidade disponibilizadas no jogo.</p>
+<p>Quando exigido, o jogo apresenta uma mensagem de privacidade (Google User Messaging Platform)
+  que permite escolher as opções aplicáveis à publicidade.</p>
+<p>Consoante as opções disponibilizadas, podes consentir ou recusar a utilização dos teus dados
+  para publicidade personalizada. A recusa não significa necessariamente que deixes de ver anúncios:
+  poderão continuar a ser apresentados anúncios não personalizados ou limitados, conforme as
+  condições aplicáveis.</p>
+<p>Quando a legislação ou as regras aplicáveis o exigirem, poderás rever ou retirar o
+  consentimento através das opções de privacidade disponibilizadas no jogo.</p>
 <h3>5. Crianças</h3>
-<p>O HexQuest não se destina especificamente a crianças. Não solicitamos intencionalmente dados pessoais de crianças. A publicidade e as opções de privacidade devem ser configuradas de acordo com a faixa etária a que o jogo se destina e com os requisitos legais e das plataformas aplicáveis.</p>
+<p>O HexQuest não se destina a crianças com menos de 13 anos. O jogo não solicita
+  intencionalmente dados pessoais às crianças.</p>
 <h3>6. Conservação e segurança</h3>
-<p>O HexQuest não mantém uma conta de utilizador nem um sistema próprio de sincronização do progresso entre dispositivos. Não é possível garantir a recuperação de dados locais após perda de dados, falha do dispositivo ou desinstalação. Os dados tratados pelo Google AdMob estão sujeitos às práticas de segurança, conservação e tratamento da Google.</p>
+<p>O progresso não é sincronizado entre dispositivos. A conta anónima Firebase serve apenas o ranking e não garante recuperar dados locais. Dados de publicidade e de ranking seguem também as práticas dos respetivos fornecedores.</p>
 <h3>7. Direitos e contacto</h3>
-<p>Nos termos da legislação aplicável, incluindo o Regulamento Geral sobre a Proteção de Dados (RGPD), poderás ter direitos de acesso, retificação, apagamento, limitação, oposição e retirada do consentimento, conforme aplicável ao tratamento em causa.</p>
-<p>Para questões relacionadas com a privacidade do HexQuest, contacta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Os pedidos relativos a dados tratados diretamente pela Google poderão ter de ser apresentados à própria Google, através dos seus canais de privacidade.</p>
-<p>Podes também apresentar uma reclamação à Comissão Nacional de Proteção de Dados (CNPD), em Portugal, quando aplicável.</p>
-<h3>8. Alterações à Política de Privacidade</h3>
-<p>Esta política poderá ser atualizada para refletir alterações no jogo, nos serviços utilizados ou nas obrigações legais. A versão em vigor será disponibilizada através dos canais oficiais do HexQuest e da ligação publicada na Google Play.</p>
-<h3>Google Play Games — Ranking global e Google Play Games</h3><p>O HexQuest utiliza o Google Play Games Services para autenticação da plataforma e classificações do modo Clássico. Ao utilizar estas funcionalidades, a Google pode tratar o gamertag, nome de exibição, identificador de jogador e pontuações, para identificar o perfil, registar recordes e apresentar classificações.</p><p>Na interface de ranking personalizada do HexQuest, os nomes dos outros jogadores são apresentados de forma parcialmente ocultada. Esta ocultação não garante anonimato e não se aplica necessariamente às interfaces do Google Play Games. A visibilidade dos dados também depende das definições de privacidade do perfil Google Play Games.</p><p>O ranking depende de ligação à Internet e de uma sessão Play Games válida. O jogo pode continuar a funcionar sem estas funcionalidades; as pontuações não serão enviadas enquanto não existir ligação ou autenticação adequada.</p><p>As pontuações e os dados de perfil tratados pelo Google Play Games estão sujeitos às políticas e aos mecanismos de conservação e eliminação da Google. Para gerir o perfil e os respetivos dados, consulta as definições do Google Play Games.</p><p>Mais informações / More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        `,
+<p>Nos termos da legislação aplicável, incluindo o Regulamento Geral sobre a Proteção de Dados
+  (RGPD), poderás ter direitos de acesso, retificação, apagamento, limitação, oposição e retirada do
+  consentimento, conforme aplicável ao tratamento em causa.</p>
+<p>Para questões relacionadas com a privacidade do HexQuest, podes contactar:
+  <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Os pedidos relativos a dados tratados
+  diretamente pela Google poderão ter de ser apresentados à própria Google. Podes também apresentar
+  uma reclamação à Comissão Nacional de Proteção de Dados (CNPD), em Portugal.</p>
+<h3>8. Alterações a esta Política de Privacidade</h3>
+<p>Esta política poderá ser atualizada para refletir alterações no jogo, nos serviços utilizados
+  ou nas obrigações legais. A versão em vigor será disponibilizada nesta página e na ficha da
+  aplicação no Google Play.</p>
+<h3>9. Firebase e ranking global</h3>
+<p>Firebase Authentication cria uma conta anónima automaticamente. Cloud Firestore guarda o identificador do jogador, a alcunha gerada e o recorde do Clássico para disponibilizar o ranking.</p>
+<p>O ranking mostra alcunhas automáticas, pontuações e posições. A tua linha é identificada como «Tu». O recorde local existente é colocado na fila de envio na primeira execução desta versão; falhas de rede mantêm o resultado pendente para nova tentativa.</p>
+<p>Limpar os dados ou reinstalar pode criar outra identidade; isso não apaga automaticamente um resultado já enviado. Os registos remotos mantêm-se até serem removidos. Para pedir acesso ou apagamento, usa o contacto desta política e indica a alcunha do ranking.</p>
+<p><a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>`,
 
         terms: `<h3>1. Âmbito e aceitação</h3>
 <p>Os presentes Termos regulam a utilização do HexQuest, um jogo gratuito para dispositivos móveis. Ao instalar ou utilizar o jogo, comprometes-te a respeitar estes Termos e a legislação aplicável. Se não concordares, deverás deixar de utilizar a aplicação e poderás desinstalá-la.</p>
@@ -296,7 +364,7 @@ const translations = {
 <p>Os presentes Termos são interpretados de acordo com a legislação aplicável. Nada nestes Termos prejudica os direitos imperativos que assistam aos consumidores ao abrigo da legislação aplicável.</p>
 <h3>9. Contacto</h3>
 <p>Para questões relacionadas com os Termos de Utilização, contacta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
-<h3>Classificações globais</h3><p>A participação nas classificações do modo Clássico utiliza o Google Play Games Services. Quando a funcionalidade está ativa e o jogador está autenticado, as pontuações elegíveis podem ser enviadas para a classificação global. A apresentação dos nomes de outros jogadores é parcialmente ocultada na interface personalizada do HexQuest, mas pode diferir nas interfaces da Google.</p><p>As classificações podem estar indisponíveis por motivos técnicos ou de ligação. Pontuações inválidas, manipuladas ou resultantes de abuso podem ser rejeitadas ou removidas, de acordo com as regras e os mecanismos disponíveis. A utilização do ranking está também sujeita aos termos aplicáveis do Google Play Games.</p>
+<h3>Classificações globais</h3><p>A classificação global do modo Clássico utiliza Firebase Authentication com autenticação anónima e Cloud Firestore. O jogo cria automaticamente um identificador de jogador e uma alcunha, sem exigir uma conta Google ou início de sessão manual. O recorde do modo Clássico pode ser enviado e apresentado no ranking global.</p><p>O ranking requer ligação à Internet. Os resultados podem ficar pendentes e ser enviados posteriormente. Pontuações inválidas ou manipuladas podem ser removidas. Limpar os dados ou reinstalar o jogo pode criar uma nova identidade, sem eliminar automaticamente pontuações já enviadas. Para solicitar a eliminação de um registo, utiliza o contacto indicado nesta página e fornece a alcunha do ranking.</p>
         `,
 
         footer: "© 2026 HexQuest. Todos os direitos reservados."
@@ -315,35 +383,71 @@ const translations = {
         privacyTitle: "Privacy Policy",
         termsTitle: "Terms of Use",
 
-        updated: "Last updated: November 4, 2026",
+        updated: "Last updated: November 7, 2026",
 
-        privacy: `<h3>1. Summary</h3>
-<p>HexQuest is a free game supported by advertising. You do not need to create an account, and the game does not require you to provide personal data to play.</p>
-<p>Game progress and preferences are stored locally on your device. Advertising is provided by Google AdMob, whose SDK may collect and share certain technical and usage data to deliver and measure ads, analyse performance and prevent fraud.</p>
+        privacy: `<p>This policy explains what data is processed by the <strong>HexQuest</strong> app
+  (<code>com.hexquest.game</code>), published on Google Play, and by what means.</p>
+<h3>1. Summary</h3>
+<p>HexQuest is a free game supported by advertising. You do not need to create an account, and
+  the game does not require you to provide personal data to play.</p>
+<p>Game progress and preferences are stored locally on your device. Advertising is provided by
+  Google AdMob, whose SDK may collect and share certain technical and usage data to deliver and
+  measure ads, analyse performance and prevent fraud.</p>
 <h3>2. Data stored on your device</h3>
-<p>HexQuest stores information locally that is needed for the game to work, including:</p>
-<ul><li>High scores in Classic and Time Attack modes;</li><li>Progress in Challenges and Match-3;</li><li>Virtual coins, unlocked themes and objectives;</li><li>Sound, vibration, theme and language preferences.</li></ul>
-<p>Under the game's current operation, this information is stored locally and is not sent to a HexQuest-operated server. Retention depends on your device and operating system backup features. Uninstalling the app may delete local app data.</p>
+<ul>
+<li>High scores in Classic and Time Attack modes;</li>
+<li>Progress in Challenges and Match-3;</li>
+<li>Virtual coins, unlocked themes and objectives;</li>
+<li>Sound, vibration, theme and language preferences.</li>
+</ul>
+<p>Progress, coins and preferences stay on the device. The exception is the Classic high score and generated identity for the Firebase leaderboard. Uninstalling may delete local data.</p>
 <h3>3. Advertising and third parties</h3>
-<p>HexQuest uses Google AdMob to display banner ads and rewarded videos.</p>
-<p>Depending on SDK configuration, region and privacy choices, data such as IP address, advertising and other device identifiers, interactions with the app and ads, and diagnostic and performance information may be collected and shared. This data may be used to deliver and measure advertising, analyse service performance and prevent fraud.</p>
-<p>For more information, see Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and the <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK privacy documentation</a>.</p>
+<p>HexQuest displays ads through Google AdMob and mediated Unity Ads. These SDKs may process IP addresses, device identifiers, ad interactions and diagnostics for advertising, measurement and fraud prevention, subject to privacy choices.</p>
+<p><a href="https://unity.com/legal/privacy-policy">Unity Ads privacy</a> · <a href="https://docs.unity.com/en-us/ads-android/4.21.0/privacy/developer-consent/disclosures/google-data-safety">Unity Ads data disclosure</a></p>
+<p>HexQuest uses <strong>Google AdMob</strong> (Google Mobile Ads SDK 25.5.0) to display banner
+  ads and rewarded videos.</p>
+<h4>3.1 Data processed by the ads SDK</h4>
+<p>The Google Mobile Ads SDK automatically collects and shares the following data types for
+  advertising, analytics and fraud-prevention purposes:</p>
+<table>
+<thead><tr><th>Data type</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td>IP address</td><td>May be used to estimate the general location of a device.</td></tr>
+<tr><td>User product interactions</td><td>App launch, taps and video views.</td></tr>
+<tr><td>Diagnostic information</td><td>App launch time, hang rate and energy usage.</td></tr>
+<tr><td>Device and account identifiers</td><td>Android advertising (ad) ID, app set ID and, where applicable, other identifiers related to signed-in accounts.</td></tr>
+</tbody>
+</table>
+<p>All data collected by the SDK is <strong>encrypted in transit</strong> using TLS. The ad ID can
+  be reset or deleted in the Android settings. HexQuest does not control the ads displayed by
+  advertisers or their external destinations.</p>
+<p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and the
+  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Play data
+  disclosure for the Google Mobile Ads SDK</a>.</p>
 <h3>4. Consent and personalised advertising</h3>
-<p>Where required, the game displays a privacy message that lets you choose the applicable advertising options.</p>
-<p>Depending on the options presented, you may consent to or refuse the use of your data for personalised advertising. Refusing personalised advertising does not necessarily mean you will stop seeing ads; non-personalised or limited ads may still be shown, as applicable.</p>
-<p>Where required by applicable law or rules, you can review or withdraw your consent through the privacy options provided in the game.</p>
+<p>Where required, the game displays a privacy message (Google User Messaging Platform) that lets
+  you choose the applicable advertising options. Refusing personalised advertising does not
+  necessarily mean you will stop seeing ads; non-personalised or limited ads may still be shown.
+  Where required, you can review or withdraw your consent through the privacy options provided in
+  the game.</p>
 <h3>5. Children</h3>
-<p>HexQuest is not specifically intended for children. We do not knowingly request children's personal data. Advertising and privacy options should be configured according to the game's intended audience and applicable legal and platform requirements.</p>
+<p>HexQuest is not specifically intended for children. We do not knowingly request children's
+  personal data.</p>
 <h3>6. Retention and security</h3>
-<p>HexQuest does not maintain user accounts or its own system for synchronising progress between devices. Recovery of local data cannot be guaranteed following data loss, device failure or uninstallation. Data processed by Google AdMob is subject to Google's security, retention and data-processing practices.</p>
+<p>Progress is not synchronised across devices. The anonymous Firebase account is used only for the leaderboard and does not guarantee recovery of local data. Ad and leaderboard data are also subject to the respective providers' practices.</p>
 <h3>7. Rights and contact</h3>
-<p>Under applicable law, including the General Data Protection Regulation (GDPR), you may have rights to access, rectify or erase data, restrict or object to processing, and withdraw consent, as applicable to the processing concerned.</p>
-<p>For privacy questions about HexQuest, contact <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Requests concerning data processed directly by Google may need to be submitted to Google through its privacy channels.</p>
-<p>Where applicable, you may also lodge a complaint with the Portuguese Data Protection Authority (CNPD).</p>
+<p>Under applicable law, including the GDPR, you may have rights to access, rectify or erase data,
+  restrict or object to processing, and withdraw consent. Contact:
+  <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Where applicable, you may also lodge a
+  complaint with the Portuguese Data Protection Authority (CNPD).</p>
 <h3>8. Changes to this Privacy Policy</h3>
-<p>This policy may be updated to reflect changes to the game, services used or legal obligations. The current version will be available through HexQuest's official channels and the link published on Google Play.</p>
-<h3>Google Play Games — Global leaderboard and Google Play Games</h3><p>HexQuest uses Google Play Games Services for platform authentication and Classic mode leaderboards. When these features are used, Google may process your gamertag, display name, player identifier and scores to identify your profile, record scores and display rankings.</p><p>In HexQuest’s custom leaderboard interface, other players’ names are partially masked. This masking does not guarantee anonymity and may not apply to Google Play Games interfaces. Data visibility also depends on the privacy settings of the Google Play Games profile.</p><p>The leaderboard requires an internet connection and a valid Play Games session. The game can still be played without these features; scores will not be submitted without an appropriate connection or authentication.</p><p>Profile and score data processed by Google Play Games are subject to Google’s policies and retention and deletion controls. You can manage your profile and related data through Google Play Games settings.</p><p>Mais informações / More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        `,
+<p>This policy may be updated to reflect changes to the game, services used or legal obligations.
+  The current version will be available on this page and on the Google Play listing.</p>
+<h3>9. Firebase and global leaderboard</h3>
+<p>Firebase Authentication automatically creates an anonymous account. Cloud Firestore stores the player identifier, generated nickname and Classic high score for the leaderboard.</p>
+<p>The leaderboard displays generated nicknames, scores and positions. Your row is labelled «You». The existing local high score is queued on the first run of this version; network failures retain pending scores for retry.</p>
+<p>Clearing app data or reinstalling may create another identity; this does not automatically delete an uploaded score. Remote records remain until removed. For access or deletion requests, use this policy's contact and provide your leaderboard nickname.</p>
+<p><a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>`,
 
         terms: `<h3>1. Scope and acceptance</h3>
 <p>These Terms govern the use of HexQuest, a free mobile game. By installing or using the game, you agree to comply with these Terms and applicable law. If you disagree, stop using the app and you may uninstall it.</p>
@@ -370,7 +474,7 @@ const translations = {
 <p>These Terms are interpreted in accordance with applicable law. Nothing in these Terms affects mandatory rights consumers may have under applicable law.</p>
 <h3>9. Contact</h3>
 <p>For questions about these Terms, contact <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
-<h3>Global leaderboards</h3><p>Classic mode leaderboards use Google Play Games Services. When the feature is active and the player is signed in, eligible scores may be submitted to the global leaderboard. Other players’ names are partially masked in HexQuest’s custom interface, but may appear differently in Google interfaces.</p><p>Leaderboards may be unavailable due to technical or connectivity issues. Invalid, manipulated or abusive scores may be rejected or removed in accordance with applicable rules and available controls. Leaderboard use is also subject to applicable Google Play Games terms.</p>
+<h3>Global leaderboards</h3><p>The Classic mode global leaderboard uses Firebase Authentication with anonymous sign-in and Cloud Firestore. The game automatically creates a player identifier and nickname without requiring a Google account or manual sign-in. The Classic high score may be uploaded and displayed in the global leaderboard.</p><p>The leaderboard requires an internet connection. Scores may be queued and submitted later. Invalid or manipulated scores may be removed. Clearing app data or reinstalling may create a new identity without automatically deleting previously uploaded scores. To request removal of a leaderboard entry, use the contact on this page and provide your leaderboard nickname.</p>
         `,
 
         footer: "© 2026 HexQuest. All rights reserved."
@@ -389,25 +493,68 @@ const translations = {
         privacyTitle: "Política de Privacidad",
         termsTitle: "Términos de Uso",
 
-        updated: "Última actualización: 4 de noviembre de 2026",
+        updated: "Última actualización: 7 de noviembre de 2026",
 
-        privacy: `<h3>1. Resumen</h3><p>HexQuest es un juego gratuito financiado mediante publicidad. No necesitas crear una cuenta y el juego no te exige proporcionar datos personales para jugar.</p>
-<p>El progreso y las preferencias se guardan localmente en tu dispositivo. Google AdMob proporciona la publicidad y su SDK puede recopilar y compartir determinados datos técnicos y de uso para mostrar y medir anuncios, analizar el rendimiento y prevenir fraudes.</p>
-<h3>2. Datos almacenados en el dispositivo</h3><p>HexQuest guarda localmente la información necesaria para el funcionamiento del juego, incluidos:</p><ul><li>Récords en los modos Clásico y Contrarreloj;</li><li>Progreso en Desafíos y Match-3;</li><li>Monedas virtuales, temas desbloqueados y objetivos;</li><li>Preferencias de sonido, vibración, tema e idioma.</li></ul>
-<p>Según el funcionamiento actual del juego, estos datos se guardan localmente y no se envían a un servidor gestionado por HexQuest. Su conservación depende del dispositivo y de las funciones de copia de seguridad del sistema operativo. Desinstalar la aplicación puede eliminar los datos locales.</p>
-<h3>3. Publicidad y terceros</h3><p>HexQuest utiliza Google AdMob para mostrar banners y vídeos recompensados.</p>
-<p>Según la configuración del SDK, la región y las opciones de privacidad, pueden recopilarse y compartirse datos como la dirección IP, identificadores publicitarios y otros identificadores del dispositivo, interacciones con la aplicación y los anuncios, e información de diagnóstico y rendimiento. Estos datos pueden utilizarse para ofrecer y medir publicidad, analizar el rendimiento y prevenir fraudes.</p>
-<p>Más información en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a> y en la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentación de privacidad de Google Mobile Ads SDK</a>.</p>
-<h3>4. Consentimiento y anuncios personalizados</h3><p>Cuando sea necesario, el juego muestra un aviso de privacidad que permite elegir las opciones publicitarias aplicables.</p>
-<p>Según las opciones disponibles, puedes aceptar o rechazar el uso de tus datos para publicidad personalizada. Rechazarla no significa necesariamente que dejes de ver anuncios; pueden seguir mostrándose anuncios no personalizados o limitados, según corresponda.</p>
-<p>Cuando lo exijan la legislación o las normas aplicables, podrás revisar o retirar tu consentimiento mediante las opciones de privacidad disponibles en el juego.</p>
-<h3>5. Niños</h3><p>HexQuest no está destinado específicamente a niños. No solicitamos conscientemente datos personales de niños. La publicidad y las opciones de privacidad deben configurarse de acuerdo con el público al que se dirige el juego y los requisitos legales y de las plataformas aplicables.</p>
-<h3>6. Conservación y seguridad</h3><p>HexQuest no mantiene cuentas de usuario ni un sistema propio para sincronizar el progreso entre dispositivos. No se puede garantizar la recuperación de datos locales tras una pérdida de datos, un fallo del dispositivo o la desinstalación. Los datos tratados por Google AdMob están sujetos a las prácticas de seguridad, conservación y tratamiento de Google.</p>
-<h3>7. Derechos y contacto</h3><p>Conforme a la legislación aplicable, incluido el Reglamento General de Protección de Datos (RGPD), puedes tener derechos de acceso, rectificación, supresión, limitación, oposición y retirada del consentimiento, según corresponda al tratamiento.</p>
-<p>Para cuestiones de privacidad sobre HexQuest, contacta con <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Las solicitudes relativas a datos tratados directamente por Google pueden tener que dirigirse a Google mediante sus canales de privacidad.</p><p>Cuando corresponda, también puedes presentar una reclamación ante la autoridad portuguesa de protección de datos (CNPD).</p>
-<h3>8. Cambios en esta política</h3><p>Esta política puede actualizarse para reflejar cambios en el juego, los servicios utilizados o las obligaciones legales. La versión vigente estará disponible en los canales oficiales de HexQuest y en el enlace publicado en Google Play.</p>
-<h3>Google Play Games — Clasificación global y Google Play Games</h3><p>HexQuest utiliza Google Play Games Services para la autenticación de la plataforma y las clasificaciones del modo Clásico. Al usar estas funciones, Google puede tratar tu nombre de jugador, nombre visible, identificador de jugador y puntuaciones para identificar el perfil, registrar récords y mostrar clasificaciones.</p><p>En la interfaz personalizada de HexQuest, los nombres de otros jugadores aparecen parcialmente ocultos. Esto no garantiza el anonimato y puede no aplicarse a las interfaces de Google Play Games. La visibilidad también depende de la configuración de privacidad del perfil.</p><p>La clasificación requiere conexión a Internet y una sesión válida de Play Games. Puedes seguir jugando sin estas funciones; no se enviarán puntuaciones sin la conexión o autenticación adecuada.</p><p>Los datos del perfil y las puntuaciones tratados por Google Play Games están sujetos a las políticas y controles de conservación y eliminación de Google. Puedes gestionarlos en la configuración de Google Play Games.</p><p>Mais informações / More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        `,
+        privacy: `<p>Esta política explica qué datos trata la aplicación <strong>HexQuest</strong>
+  (<code>com.hexquest.game</code>), publicada en Google Play, y por qué medios.</p>
+<h3>1. Resumen</h3>
+<p>HexQuest es un juego gratuito financiado mediante publicidad. No necesitas crear una cuenta y
+  el juego no te exige proporcionar datos personales para jugar. El progreso y las preferencias se
+  guardan localmente en tu dispositivo. Google AdMob proporciona la publicidad y su SDK puede
+  recopilar y compartir determinados datos técnicos y de uso para mostrar y medir anuncios, analizar
+  el rendimiento y prevenir fraudes.</p>
+<h3>2. Datos almacenados en el dispositivo</h3>
+<ul>
+<li>Récords en los modos Clásico y Contrarreloj;</li>
+<li>Progreso en Desafíos y Match-3;</li>
+<li>Monedas virtuales, temas desbloqueados y objetivos;</li>
+<li>Preferencias de sonido, vibración, tema e idioma.</li>
+</ul>
+<p>El progreso, las monedas y las preferencias permanecen en el dispositivo, salvo el récord del Clásico y la identidad generada para Firebase. Desinstalar puede borrar los datos locales.</p>
+<h3>3. Publicidad y terceros</h3>
+<p>HexQuest muestra anuncios mediante Google AdMob y Unity Ads por mediación. Estos SDK pueden tratar direcciones IP, identificadores del dispositivo, interacciones con anuncios y diagnósticos para publicidad, medición y prevención del fraude, según las opciones de privacidad.</p>
+<p><a href="https://unity.com/legal/privacy-policy">Unity Ads privacy</a> · <a href="https://docs.unity.com/en-us/ads-android/4.21.0/privacy/developer-consent/disclosures/google-data-safety">Unity Ads data disclosure</a></p>
+<p>HexQuest utiliza <strong>Google AdMob</strong> (Google Mobile Ads SDK 25.5.0) para mostrar
+  banners y vídeos recompensados.</p>
+<h4>3.1 Datos tratados por el SDK de anuncios</h4>
+<p>El SDK de Google Mobile Ads recopila y comparte automáticamente los siguientes tipos de datos
+  con fines publicitarios, analíticos y de prevención de fraudes:</p>
+<table>
+<thead><tr><th>Tipo de dato</th><th>Finalidad</th></tr></thead>
+<tbody>
+<tr><td>Dirección IP</td><td>Puede utilizarse para estimar la ubicación general del dispositivo.</td></tr>
+<tr><td>Interacciones con el producto</td><td>Apertura de la app, toques y visualizaciones de vídeos.</td></tr>
+<tr><td>Información de diagnóstico</td><td>Tiempo de inicio, tasa de bloqueos y consumo de energía.</td></tr>
+<tr><td>Identificadores de dispositivo y cuenta</td><td>ID de publicidad de Android, app set ID y, cuando proceda, otros identificadores de cuentas con sesión iniciada.</td></tr>
+</tbody>
+</table>
+<p>Todos los datos recopilados por el SDK se <strong>cifran en tránsito</strong> mediante TLS. Más
+  información en la <a href="https://policies.google.com/privacy">Política de Privacidad de
+  Google</a> y en la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">documentación
+  de divulgación de datos de Google Play del SDK</a>.</p>
+<h3>4. Consentimiento y anuncios personalizados</h3>
+<p>Cuando sea necesario, el juego muestra un aviso de privacidad que permite elegir las opciones
+  publicitarias aplicables. Rechazar la publicidad personalizada no significa necesariamente que
+  dejes de ver anuncios. Cuando lo exija la normativa aplicable, podrás revisar o retirar tu
+  consentimiento mediante las opciones de privacidad disponibles en el juego.</p>
+<h3>5. Niños</h3>
+<p>HexQuest no está destinado específicamente a niños. No solicitamos conscientemente datos
+  personales de niños.</p>
+<h3>6. Conservación y seguridad</h3>
+<p>El progreso no se sincroniza entre dispositivos. La cuenta anónima Firebase solo sirve para la clasificación y no garantiza recuperar datos locales. Los datos de anuncios y clasificación también siguen las prácticas de los proveedores.</p>
+<h3>7. Derechos y contacto</h3>
+<p>Conforme al RGPD, puedes tener derechos de acceso, rectificación, supresión, limitación,
+  oposición y retirada del consentimiento. Contacto:
+  <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Cuando corresponda, también puedes
+  presentar una reclamación ante la autoridad portuguesa de protección de datos (CNPD).</p>
+<h3>8. Cambios en esta política</h3>
+<p>Esta política puede actualizarse. La versión vigente estará disponible en esta página y en la
+  ficha de Google Play.</p>
+<h3>9. Firebase y clasificación global</h3>
+<p>Firebase Authentication crea automáticamente una cuenta anónima. Cloud Firestore guarda el identificador del jugador, el apodo generado y el récord del Clásico para la clasificación.</p>
+<p>La clasificación muestra apodos generados, puntuaciones y posiciones. Tu fila se identifica como «Tú». El récord local existente se pone en cola en la primera ejecución de esta versión; los fallos de red conservan la puntuación pendiente.</p>
+<p>Borrar los datos o reinstalar puede crear otra identidad; no elimina automáticamente una puntuación enviada. Los registros remotos permanecen hasta su eliminación. Para solicitar acceso o borrado, utiliza el contacto de esta política e indica tu apodo.</p>
+<p><a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>`,
 
         terms: `<h3>1. Ámbito y aceptación</h3><p>Estas condiciones regulan el uso de HexQuest, un juego gratuito para dispositivos móviles. Al instalar o utilizar el juego, aceptas cumplir estas condiciones y la legislación aplicable. Si no estás de acuerdo, deja de utilizar la aplicación y puedes desinstalarla.</p>
 <h3>2. Licencia de uso</h3><p>Se concede una licencia personal, limitada, no exclusiva e intransferible para utilizar HexQuest con fines personales y no comerciales.</p><p>No puedes copiar, modificar, distribuir, vender, sublicenciar ni redistribuir el juego, ni intentar obtener su código fuente por medios no autorizados, salvo cuando lo permita la legislación aplicable.</p>
@@ -418,7 +565,7 @@ const translations = {
 <h3>7. Cambios y actualizaciones</h3><p>El juego y estas condiciones pueden actualizarse para corregir errores, añadir funciones, mejorar la seguridad o reflejar cambios legales y técnicos. Cuando sea necesario, los cambios importantes se comunicarán por medios adecuados.</p><p>La versión vigente estará disponible en esta página y, cuando corresponda, dentro de la aplicación.</p>
 <h3>8. Legislación aplicable</h3><p>Estas condiciones se interpretan conforme a la legislación aplicable. Nada de lo aquí dispuesto perjudica los derechos imperativos de los consumidores.</p>
 <h3>9. Contacto</h3><p>Para consultas sobre estas condiciones, contacta con <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
-<h3>Clasificaciones globales</h3><p>Las clasificaciones del modo Clásico utilizan Google Play Games Services. Con la función activa y el jugador autenticado, las puntuaciones válidas pueden enviarse a la clasificación global. Los nombres aparecen parcialmente ocultos en la interfaz personalizada de HexQuest, pero pueden mostrarse de otra manera en las interfaces de Google.</p><p>Las clasificaciones pueden no estar disponibles por problemas técnicos o de conexión. Las puntuaciones inválidas, manipuladas o abusivas pueden rechazarse o eliminarse según las normas y mecanismos disponibles. También se aplican los términos pertinentes de Google Play Games.</p>
+<h3>Clasificaciones globales</h3><p>La clasificación global del modo Clásico utiliza Firebase Authentication con autenticación anónima y Cloud Firestore. El juego crea automáticamente un identificador y un apodo, sin exigir una cuenta de Google ni iniciar sesión manualmente. El récord del modo Clásico puede enviarse y mostrarse en la clasificación global.</p><p>La clasificación requiere conexión a Internet. Las puntuaciones pueden quedar pendientes y enviarse más tarde. Las puntuaciones inválidas o manipuladas pueden eliminarse. Borrar los datos o reinstalar puede crear una nueva identidad sin eliminar automáticamente resultados anteriores. Para solicitar su eliminación, utiliza el contacto de esta página e indica tu apodo.</p>
         `,
 
         footer: "© 2026 HexQuest. Todos los derechos reservados."
@@ -437,18 +584,68 @@ const translations = {
         privacyTitle: "Politique de confidentialité",
         termsTitle: "Conditions d'utilisation",
 
-        updated: "Dernière mise à jour : 4 novembre 2026",
+        updated: "Dernière mise à jour : 7 novembre 2026",
 
-        privacy: `<h3>1. Résumé</h3><p>HexQuest est un jeu gratuit financé par la publicité. Aucun compte n'est nécessaire et le jeu ne vous demande pas de fournir des données personnelles pour jouer.</p><p>La progression et les préférences sont enregistrées localement sur votre appareil. Google AdMob fournit la publicité et son SDK peut collecter et partager certaines données techniques et d'utilisation afin de diffuser et mesurer les annonces, d'analyser les performances et de prévenir la fraude.</p>
-<h3>2. Données stockées sur l'appareil</h3><p>HexQuest stocke localement les informations nécessaires au fonctionnement du jeu, notamment :</p><ul><li>Meilleurs scores en modes Classique et Contre-la-montre ;</li><li>Progression dans les Défis et le Match-3 ;</li><li>Pièces virtuelles, thèmes débloqués et objectifs ;</li><li>Préférences de son, vibration, thème et langue.</li></ul><p>Selon le fonctionnement actuel du jeu, ces données sont stockées localement et ne sont pas envoyées à un serveur exploité par HexQuest. Leur conservation dépend de l'appareil et des fonctions de sauvegarde du système. La désinstallation peut supprimer les données locales.</p>
-<h3>3. Publicité et tiers</h3><p>HexQuest utilise Google AdMob pour afficher des bannières et des vidéos récompensées.</p><p>Selon la configuration du SDK, la région et les choix de confidentialité, des données telles que l'adresse IP, les identifiants publicitaires et autres identifiants de l'appareil, les interactions avec l'application et les annonces, ainsi que des informations de diagnostic et de performance peuvent être collectées et partagées. Elles peuvent servir à diffuser et mesurer la publicité, analyser les performances et prévenir la fraude.</p><p>Consultez la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité de Google</a> et la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentation de confidentialité du SDK Google Mobile Ads</a>.</p>
-<h3>4. Consentement et publicité personnalisée</h3><p>Lorsque cela est requis, le jeu affiche un message de confidentialité permettant de choisir les options publicitaires applicables.</p><p>Selon les options proposées, vous pouvez consentir ou refuser l'utilisation de vos données à des fins de publicité personnalisée. Le refus de la publicité personnalisée ne signifie pas nécessairement que vous ne verrez plus de publicités ; des annonces non personnalisées ou limitées peuvent rester affichées, selon le cas.</p><p>Lorsque la loi ou les règles applicables l'exigent, vous pouvez consulter ou retirer votre consentement via les options de confidentialité proposées dans le jeu.</p>
-<h3>5. Enfants</h3><p>HexQuest ne s'adresse pas spécifiquement aux enfants. Nous ne demandons pas sciemment de données personnelles aux enfants. La publicité et les options de confidentialité doivent être configurées conformément au public visé et aux exigences légales et des plateformes.</p>
-<h3>6. Conservation et sécurité</h3><p>HexQuest ne gère pas de comptes utilisateurs ni de système propre de synchronisation de la progression entre appareils. La récupération des données locales après une perte de données, une panne de l'appareil ou une désinstallation ne peut être garantie. Les données traitées par Google AdMob sont soumises aux pratiques de sécurité, de conservation et de traitement de Google.</p>
-<h3>7. Droits et contact</h3><p>Selon la législation applicable, notamment le RGPD, vous pouvez disposer de droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de retrait du consentement, selon le traitement concerné.</p><p>Pour toute question relative à la confidentialité de HexQuest, contactez <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Les demandes concernant les données traitées directement par Google peuvent devoir être adressées à Google via ses canaux de confidentialité.</p><p>Le cas échéant, vous pouvez également déposer une plainte auprès de l'autorité portugaise de protection des données (CNPD).</p>
-<h3>8. Modifications de la politique</h3><p>Cette politique peut être mise à jour pour refléter les changements du jeu, des services utilisés ou des obligations légales. La version en vigueur sera disponible sur les canaux officiels de HexQuest et via le lien publié sur Google Play.</p>
-<h3>Google Play Games — Classement mondial et Google Play Games</h3><p>HexQuest utilise Google Play Games Services pour l’authentification de la plateforme et les classements du mode Classique. Lors de leur utilisation, Google peut traiter votre pseudonyme de joueur, nom affiché, identifiant de joueur et scores afin d’identifier votre profil, enregistrer les scores et afficher les classements.</p><p>Dans l’interface personnalisée de HexQuest, les noms des autres joueurs sont partiellement masqués. Cela ne garantit pas l’anonymat et ne s’applique pas nécessairement aux interfaces Google Play Games. La visibilité dépend aussi des paramètres de confidentialité du profil.</p><p>Le classement nécessite une connexion Internet et une session Play Games valide. Le jeu reste jouable sans ces fonctions ; les scores ne seront pas transmis sans connexion ou authentification appropriée.</p><p>Les données de profil et de score traitées par Google Play Games sont soumises aux politiques et aux contrôles de conservation et de suppression de Google. Vous pouvez les gérer dans les paramètres Google Play Games.</p><p>Mais informações / More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        `,
+        privacy: `<p>Cette politique explique quelles données sont traitées par l'application
+  <strong>HexQuest</strong> (<code>com.hexquest.game</code>), publiée sur Google Play.</p>
+<h3>1. Résumé</h3>
+<p>HexQuest est un jeu gratuit financé par la publicité. Aucun compte n'est nécessaire et le jeu
+  ne vous demande pas de fournir des données personnelles pour jouer. La progression et les
+  préférences sont enregistrées localement sur votre appareil. Google AdMob fournit la publicité et
+  son SDK peut collecter et partager certaines données techniques et d'utilisation afin de diffuser
+  et mesurer les annonces, d'analyser les performances et de prévenir la fraude.</p>
+<h3>2. Données stockées sur l'appareil</h3>
+<ul>
+<li>Meilleurs scores en modes Classique et Contre-la-montre ;</li>
+<li>Progression dans les Défis et le Match-3 ;</li>
+<li>Pièces virtuelles, thèmes débloqués et objectifs ;</li>
+<li>Préférences de son, vibration, thème et langue.</li>
+</ul>
+<p>La progression, les pièces et les préférences restent sur l'appareil, sauf le record Classique et l'identité générée pour Firebase. La désinstallation peut supprimer les données locales.</p>
+<h3>3. Publicité et tiers</h3>
+<p>HexQuest affiche des publicités via Google AdMob et Unity Ads en médiation. Ces SDK peuvent traiter les adresses IP, identifiants d'appareil, interactions publicitaires et diagnostics pour la publicité, la mesure et la prévention des fraudes, selon les choix de confidentialité.</p>
+<p><a href="https://unity.com/legal/privacy-policy">Unity Ads privacy</a> · <a href="https://docs.unity.com/en-us/ads-android/4.21.0/privacy/developer-consent/disclosures/google-data-safety">Unity Ads data disclosure</a></p>
+<p>HexQuest utilise <strong>Google AdMob</strong> (Google Mobile Ads SDK 25.5.0) pour afficher des
+  bannières et des vidéos récompensées.</p>
+<h4>3.1 Données traitées par le SDK publicitaire</h4>
+<p>Le SDK Google Mobile Ads collecte et partage automatiquement les types de données suivants à
+  des fins de publicité, d'analyse et de prévention de la fraude :</p>
+<table>
+<thead><tr><th>Type de données</th><th>Finalité</th></tr></thead>
+<tbody>
+<tr><td>Adresse IP</td><td>Peut servir à estimer la localisation générale de l'appareil.</td></tr>
+<tr><td>Interactions avec le produit</td><td>Lancement de l'app, appuis et vues de vidéos.</td></tr>
+<tr><td>Informations de diagnostic</td><td>Temps de démarrage, taux de blocage et consommation d'énergie.</td></tr>
+<tr><td>Identifiants de l'appareil et du compte</td><td>ID publicitaire Android, app set ID et, le cas échéant, autres identifiants liés aux comptes connectés.</td></tr>
+</tbody>
+</table>
+<p>Toutes les données collectées par le SDK sont <strong>chiffrées en transit</strong> (TLS). Voir
+  la <a href="https://policies.google.com/privacy">Politique de confidentialité de Google</a> et la
+  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">documentation de
+  divulgation des données Google Play</a>.</p>
+<h3>4. Consentement et publicité personnalisée</h3>
+<p>Lorsque cela est requis, le jeu affiche un message de confidentialité permettant de choisir les
+  options publicitaires applicables. Refuser la publicité personnalisée ne signifie pas
+  nécessairement que vous cesserez de voir des annonces. Vous pouvez revoir ou retirer votre
+  consentement via les options de confidentialité du jeu.</p>
+<h3>5. Enfants</h3>
+<p>HexQuest n'est pas spécifiquement destiné aux enfants. Nous ne demandons pas sciemment de
+  données personnelles concernant des enfants.</p>
+<h3>6. Conservation et sécurité</h3>
+<p>La progression n'est pas synchronisée entre appareils. Le compte Firebase anonyme sert uniquement au classement et ne garantit pas la récupération des données locales. Les données publicitaires et du classement suivent aussi les pratiques des fournisseurs.</p>
+<h3>7. Droits et contact</h3>
+<p>Conformément au RGPD, vous disposez de droits d'accès, de rectification, d'effacement, de
+  limitation, d'opposition et de retrait du consentement. Contact :
+  <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Vous pouvez aussi saisir l'autorité
+  portugaise de protection des données (CNPD).</p>
+<h3>8. Modifications</h3>
+<p>Cette politique peut être mise à jour. La version en vigueur sera disponible sur cette page et
+  sur la fiche Google Play.</p>
+<h3>9. Firebase et classement mondial</h3>
+<p>Firebase Authentication crée automatiquement un compte anonyme. Cloud Firestore conserve l'identifiant du joueur, le pseudo généré et le record Classique pour le classement.</p>
+<p>Le classement affiche des pseudos générés, scores et positions. Ta ligne indique «Toi». Le record local existant est mis en attente au premier lancement de cette version ; les échecs réseau conservent le score pour une nouvelle tentative.</p>
+<p>Effacer les données ou réinstaller peut créer une autre identité sans supprimer automatiquement un score envoyé. Les données distantes restent jusqu'à leur suppression. Pour demander un accès ou un effacement, utilise le contact de cette politique en indiquant ton pseudo.</p>
+<p><a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>`,
 
         terms: `<h3>1. Objet et acceptation</h3><p>Les présentes conditions régissent l'utilisation de HexQuest, un jeu mobile gratuit. En installant ou en utilisant le jeu, vous acceptez de respecter ces conditions et la législation applicable. Si vous n'êtes pas d'accord, cessez d'utiliser l'application et vous pouvez la désinstaller.</p>
 <h3>2. Licence d'utilisation</h3><p>Une licence personnelle, limitée, non exclusive et non transférable vous est accordée pour utiliser HexQuest à des fins personnelles et non commerciales.</p><p>Vous ne pouvez pas copier, modifier, distribuer, vendre, sous-licencier ou redistribuer le jeu, ni tenter d'obtenir son code source par des moyens non autorisés, sauf si la loi applicable le permet.</p>
@@ -459,7 +656,7 @@ const translations = {
 <h3>7. Modifications et mises à jour</h3><p>Le jeu et ces conditions peuvent être mis à jour pour corriger des erreurs, ajouter des fonctionnalités, améliorer la sécurité ou refléter des changements juridiques et techniques. Les modifications importantes seront communiquées par des moyens appropriés lorsque cela est nécessaire.</p><p>La version actuelle sera disponible sur cette page et, le cas échéant, dans l'application.</p>
 <h3>8. Droit applicable</h3><p>Ces conditions sont interprétées conformément au droit applicable. Elles ne portent pas atteinte aux droits impératifs dont bénéficient les consommateurs.</p>
 <h3>9. Contact</h3><p>Pour toute question concernant ces conditions, contactez <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
-<h3>Classements mondiaux</h3><p>Les classements du mode Classique utilisent Google Play Games Services. Lorsque la fonction est active et que le joueur est connecté, les scores admissibles peuvent être transmis au classement mondial. Les noms des autres joueurs sont partiellement masqués dans l’interface personnalisée de HexQuest, mais peuvent apparaître différemment dans les interfaces Google.</p><p>Les classements peuvent être indisponibles pour des raisons techniques ou de connexion. Les scores invalides, manipulés ou abusifs peuvent être rejetés ou supprimés selon les règles et mécanismes disponibles. Les conditions applicables de Google Play Games s’appliquent également.</p>
+<h3>Classements mondiaux</h3><p>Le classement mondial du mode Classique utilise Firebase Authentication avec une authentification anonyme et Cloud Firestore. Le jeu crée automatiquement un identifiant et un pseudo sans exiger de compte Google ni de connexion manuelle. Le record du mode Classique peut être envoyé et affiché dans le classement mondial.</p><p>Le classement nécessite une connexion Internet. Les scores peuvent rester en attente avant leur envoi. Les scores invalides ou manipulés peuvent être supprimés. Effacer les données ou réinstaller le jeu peut créer une nouvelle identité sans supprimer automatiquement les scores précédents. Pour demander leur suppression, utilise le contact de cette page et indique ton pseudo.</p>
         `,
 
         footer: "© 2026 HexQuest. Tous droits réservés."
@@ -478,18 +675,68 @@ const translations = {
         privacyTitle: "Informativa sulla privacy",
         termsTitle: "Termini di utilizzo",
 
-        updated: "Ultimo aggiornamento: 4 novembre 2026",
+        updated: "Ultimo aggiornamento: 7 novembre 2026",
 
-        privacy: `<h3>1. Riepilogo</h3><p>HexQuest è un gioco gratuito supportato dalla pubblicità. Non è necessario creare un account e il gioco non richiede dati personali per giocare.</p><p>I progressi e le preferenze vengono salvati localmente sul dispositivo. La pubblicità è fornita da Google AdMob, il cui SDK può raccogliere e condividere alcuni dati tecnici e di utilizzo per mostrare e misurare gli annunci, analizzare le prestazioni e prevenire le frodi.</p>
-<h3>2. Dati salvati sul dispositivo</h3><p>HexQuest salva localmente le informazioni necessarie al funzionamento del gioco, tra cui:</p><ul><li>Record nelle modalità Classica e Contro il tempo;</li><li>Progressi nelle Sfide e nel Match-3;</li><li>Monete virtuali, temi sbloccati e obiettivi;</li><li>Preferenze di audio, vibrazione, tema e lingua.</li></ul><p>Secondo il funzionamento attuale del gioco, questi dati sono salvati localmente e non vengono inviati a un server gestito da HexQuest. La conservazione dipende dal dispositivo e dalle funzioni di backup del sistema operativo. La disinstallazione può eliminare i dati locali.</p>
-<h3>3. Pubblicità e terze parti</h3><p>HexQuest utilizza Google AdMob per mostrare banner e video con ricompensa.</p><p>A seconda della configurazione dell'SDK, della regione e delle scelte sulla privacy, possono essere raccolti e condivisi dati quali indirizzo IP, identificatori pubblicitari e altri identificatori del dispositivo, interazioni con l'app e gli annunci e informazioni diagnostiche e sulle prestazioni. Questi dati possono essere utilizzati per fornire e misurare la pubblicità, analizzare le prestazioni e prevenire le frodi.</p><p>Consulta l'<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Informativa sulla privacy di Google</a> e la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">documentazione sulla privacy di Google Mobile Ads SDK</a>.</p>
-<h3>4. Consenso e pubblicità personalizzata</h3><p>Quando richiesto, il gioco mostra un'informativa che consente di scegliere le opzioni pubblicitarie applicabili.</p><p>A seconda delle opzioni disponibili, puoi acconsentire o rifiutare l'utilizzo dei tuoi dati per la pubblicità personalizzata. Il rifiuto non significa necessariamente che non vedrai più annunci: possono essere mostrati annunci non personalizzati o limitati, ove applicabile.</p><p>Quando richiesto dalla legge o dalle regole applicabili, puoi rivedere o revocare il consenso tramite le opzioni sulla privacy disponibili nel gioco.</p>
-<h3>5. Minori</h3><p>HexQuest non è specificamente destinato ai bambini. Non richiediamo consapevolmente dati personali dei bambini. La pubblicità e le opzioni sulla privacy devono essere configurate in base al pubblico previsto e ai requisiti legali e delle piattaforme.</p>
-<h3>6. Conservazione e sicurezza</h3><p>HexQuest non gestisce account utente né un proprio sistema di sincronizzazione dei progressi tra dispositivi. Non è possibile garantire il recupero dei dati locali dopo perdita di dati, guasto del dispositivo o disinstallazione. I dati trattati da Google AdMob sono soggetti alle pratiche di sicurezza, conservazione e trattamento di Google.</p>
-<h3>7. Diritti e contatti</h3><p>In base alla legge applicabile, incluso il GDPR, potresti avere diritti di accesso, rettifica, cancellazione, limitazione, opposizione e revoca del consenso, secondo il trattamento interessato.</p><p>Per domande sulla privacy di HexQuest, contatta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Le richieste relative ai dati trattati direttamente da Google potrebbero dover essere inviate a Google tramite i suoi canali privacy.</p><p>Ove applicabile, puoi anche presentare un reclamo all'autorità portoghese per la protezione dei dati (CNPD).</p>
-<h3>8. Modifiche all'informativa</h3><p>Questa informativa può essere aggiornata per riflettere modifiche al gioco, ai servizi utilizzati o agli obblighi legali. La versione vigente sarà disponibile sui canali ufficiali di HexQuest e tramite il link pubblicato su Google Play.</p>
-<h3>Google Play Games — Classifica globale e Google Play Games</h3><p>HexQuest utilizza Google Play Games Services per l’autenticazione della piattaforma e le classifiche della modalità Classica. Quando usi queste funzioni, Google può trattare il gamertag, il nome visualizzato, l’identificativo del giocatore e i punteggi per identificare il profilo, registrare i record e mostrare le classifiche.</p><p>Nell’interfaccia personalizzata di HexQuest, i nomi degli altri giocatori sono parzialmente oscurati. Ciò non garantisce l’anonimato e potrebbe non applicarsi alle interfacce di Google Play Games. La visibilità dipende anche dalle impostazioni di privacy del profilo.</p><p>La classifica richiede una connessione Internet e una sessione Play Games valida. È possibile continuare a giocare senza queste funzioni; i punteggi non vengono inviati senza connessione o autenticazione adeguata.</p><p>I dati del profilo e i punteggi trattati da Google Play Games sono soggetti alle politiche e ai controlli di conservazione ed eliminazione di Google. Puoi gestirli nelle impostazioni di Google Play Games.</p><p>Mais informações / More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        `,
+        privacy: `<p>Questa informativa spiega quali dati sono trattati dall'app <strong>HexQuest</strong>
+  (<code>com.hexquest.game</code>), pubblicata su Google Play.</p>
+<h3>1. Riepilogo</h3>
+<p>HexQuest è un gioco gratuito supportato dalla pubblicità. Non è necessario creare un account e
+  il gioco non richiede dati personali per giocare. I progressi e le preferenze vengono salvati
+  localmente sul dispositivo. La pubblicità è fornita da Google AdMob, il cui SDK può raccogliere e
+  condividere alcuni dati tecnici e di utilizzo per mostrare e misurare gli annunci, analizzare le
+  prestazioni e prevenire le frodi.</p>
+<h3>2. Dati salvati sul dispositivo</h3>
+<ul>
+<li>Record nelle modalità Classica e Contro il tempo;</li>
+<li>Progressi nelle Sfide e nel Match-3;</li>
+<li>Monete virtuali, temi sbloccati e obiettivi;</li>
+<li>Preferenze di audio, vibrazione, tema e lingua.</li>
+</ul>
+<p>Progressi, monete e preferenze restano sul dispositivo, salvo il record Classico e l'identità generata per Firebase. La disinstallazione può eliminare i dati locali.</p>
+<h3>3. Pubblicità e terze parti</h3>
+<p>HexQuest mostra annunci tramite Google AdMob e Unity Ads in mediazione. Questi SDK possono trattare indirizzi IP, identificativi del dispositivo, interazioni con annunci e dati diagnostici per pubblicità, misurazione e prevenzione delle frodi, secondo le scelte sulla privacy.</p>
+<p><a href="https://unity.com/legal/privacy-policy">Unity Ads privacy</a> · <a href="https://docs.unity.com/en-us/ads-android/4.21.0/privacy/developer-consent/disclosures/google-data-safety">Unity Ads data disclosure</a></p>
+<p>HexQuest utilizza <strong>Google AdMob</strong> (Google Mobile Ads SDK 25.5.0) per mostrare
+  banner e video con ricompensa.</p>
+<h4>3.1 Dati trattati dall'SDK pubblicitario</h4>
+<p>L'SDK Google Mobile Ads raccoglie e condivide automaticamente i seguenti tipi di dati per
+  finalità pubblicitarie, analitiche e di prevenzione delle frodi:</p>
+<table>
+<thead><tr><th>Tipo di dato</th><th>Finalità</th></tr></thead>
+<tbody>
+<tr><td>Indirizzo IP</td><td>Può essere usato per stimare la posizione generale del dispositivo.</td></tr>
+<tr><td>Interazioni con il prodotto</td><td>Avvio dell'app, tocchi e visualizzazioni video.</td></tr>
+<tr><td>Informazioni diagnostiche</td><td>Tempo di avvio, tasso di blocchi e consumo energetico.</td></tr>
+<tr><td>Identificatori di dispositivo e account</td><td>ID pubblicitario Android, app set ID e, se applicabile, altri identificatori di account con accesso.</td></tr>
+</tbody>
+</table>
+<p>Tutti i dati raccolti dall'SDK sono <strong>cifrati in transito</strong> (TLS). Vedi
+  l'<a href="https://policies.google.com/privacy">Informativa sulla privacy di Google</a> e la
+  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">documentazione
+  sulla divulgazione dei dati Google Play</a>.</p>
+<h3>4. Consenso e pubblicità personalizzata</h3>
+<p>Quando richiesto, il gioco mostra un messaggio sulla privacy che consente di scegliere le
+  opzioni pubblicitarie applicabili. Rifiutare la pubblicità personalizzata non implica
+  necessariamente che non verranno più mostrati annunci. Puoi rivedere o revocare il consenso
+  tramite le opzioni sulla privacy del gioco.</p>
+<h3>5. Bambini</h3>
+<p>HexQuest non è destinato specificamente ai bambini. Non richiediamo consapevolmente dati
+  personali dei bambini.</p>
+<h3>6. Conservazione e sicurezza</h3>
+<p>I progressi non sono sincronizzati tra dispositivi. L'account Firebase anonimo serve solo alla classifica e non garantisce il recupero dei dati locali. I dati pubblicitari e della classifica seguono anche le pratiche dei fornitori.</p>
+<h3>7. Diritti e contatti</h3>
+<p>Ai sensi del GDPR, puoi esercitare i diritti di accesso, rettifica, cancellazione, limitazione,
+  opposizione e revoca del consenso. Contatto:
+  <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Puoi anche rivolgerti all'autorità
+  portoghese per la protezione dei dati (CNPD).</p>
+<h3>8. Modifiche</h3>
+<p>La presente informativa può essere aggiornata. La versione vigente sarà disponibile su questa
+  pagina e sulla scheda Google Play.</p>
+<h3>9. Firebase e classifica globale</h3>
+<p>Firebase Authentication crea automaticamente un account anonimo. Cloud Firestore conserva identificativo del giocatore, soprannome generato e record Classico per la classifica.</p>
+<p>La classifica mostra soprannomi generati, punteggi e posizioni. La tua riga indica «Tu». Il record locale esistente viene accodato al primo avvio di questa versione; in caso di errore di rete resta in attesa di un nuovo tentativo.</p>
+<p>Cancellare i dati o reinstallare può creare una nuova identità senza eliminare automaticamente i punteggi inviati. I dati remoti restano fino alla rimozione. Per richiedere accesso o cancellazione, usa il contatto di questa politica e indica il soprannome.</p>
+<p><a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>`,
 
         terms: `<h3>1. Ambito e accettazione</h3><p>Questi Termini regolano l'utilizzo di HexQuest, un gioco gratuito per dispositivi mobili. Installando o utilizzando il gioco, accetti di rispettare questi Termini e la legge applicabile. Se non sei d'accordo, interrompi l'utilizzo e puoi disinstallare l'applicazione.</p>
 <h3>2. Licenza d'uso</h3><p>È concessa una licenza personale, limitata, non esclusiva e non trasferibile per utilizzare HexQuest per scopi personali e non commerciali.</p><p>Non puoi copiare, modificare, distribuire, vendere, concedere in sublicenza o ridistribuire il gioco, né tentare di ottenere il codice sorgente con mezzi non autorizzati, salvo quanto consentito dalla legge applicabile.</p>
@@ -500,7 +747,7 @@ const translations = {
 <h3>7. Modifiche e aggiornamenti</h3><p>Il gioco e questi Termini possono essere aggiornati per correggere errori, introdurre funzionalità, migliorare la sicurezza o riflettere cambiamenti legali e tecnici. Le modifiche sostanziali saranno comunicate con mezzi appropriati ove necessario.</p><p>La versione vigente sarà disponibile su questa pagina e, ove applicabile, nell'applicazione.</p>
 <h3>8. Legge applicabile</h3><p>Questi Termini sono interpretati secondo la legge applicabile e non pregiudicano i diritti inderogabili riconosciuti ai consumatori.</p>
 <h3>9. Contatti</h3><p>Per domande su questi Termini, contatta <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
-<h3>Classifiche globali</h3><p>Le classifiche della modalità Classica utilizzano Google Play Games Services. Quando la funzione è attiva e il giocatore ha effettuato l’accesso, i punteggi idonei possono essere inviati alla classifica globale. I nomi degli altri giocatori sono parzialmente oscurati nell’interfaccia personalizzata di HexQuest, ma potrebbero apparire diversamente nelle interfacce Google.</p><p>Le classifiche potrebbero non essere disponibili per problemi tecnici o di connessione. I punteggi non validi, manipolati o abusivi possono essere rifiutati o rimossi secondo le regole e gli strumenti disponibili. Si applicano inoltre i termini pertinenti di Google Play Games.</p>
+<h3>Classifiche globali</h3><p>La classifica globale della modalità Classica utilizza Firebase Authentication con accesso anonimo e Cloud Firestore. Il gioco crea automaticamente un identificativo e un soprannome senza richiedere un account Google o un accesso manuale. Il record della modalità Classica può essere inviato e mostrato nella classifica globale.</p><p>La classifica richiede una connessione Internet. I punteggi possono restare in attesa ed essere inviati in seguito. I punteggi non validi o manipolati possono essere rimossi. Cancellare i dati o reinstallare il gioco può creare una nuova identità senza eliminare automaticamente i risultati già inviati. Per richiederne la rimozione, usa il contatto indicato in questa pagina e comunica il soprannome.</p>
         `,
 
         footer: "© 2026 HexQuest. Tutti i diritti riservati."
@@ -519,18 +766,68 @@ const translations = {
         privacyTitle: "Datenschutzerklärung",
         termsTitle: "Nutzungsbedingungen",
 
-        updated: "Letzte Aktualisierung: 4. November 2026",
+        updated: "Letzte Aktualisierung: 7. November 2026",
 
-        privacy: `<h3>1. Zusammenfassung</h3><p>HexQuest ist ein kostenloses, werbefinanziertes Spiel. Du musst kein Konto erstellen und das Spiel verlangt keine personenbezogenen Daten, um gespielt zu werden.</p><p>Spielstand und Einstellungen werden lokal auf deinem Gerät gespeichert. Google AdMob stellt die Werbung bereit; dessen SDK kann bestimmte technische Daten und Nutzungsdaten erfassen und weitergeben, um Anzeigen auszuliefern und zu messen, die Leistung zu analysieren und Betrug zu verhindern.</p>
-<h3>2. Auf dem Gerät gespeicherte Daten</h3><p>HexQuest speichert lokal die für das Spiel erforderlichen Informationen, darunter:</p><ul><li>Bestleistungen in den Modi Klassisch und Zeitangriff;</li><li>Fortschritt bei Herausforderungen und Match-3;</li><li>Virtuelle Münzen, freigeschaltete Designs und Ziele;</li><li>Einstellungen für Ton, Vibration, Design und Sprache.</li></ul><p>Nach der aktuellen Funktionsweise werden diese Daten lokal gespeichert und nicht an einen von HexQuest betriebenen Server gesendet. Die Aufbewahrung hängt vom Gerät und den Sicherungsfunktionen des Betriebssystems ab. Bei der Deinstallation können lokale App-Daten gelöscht werden.</p>
-<h3>3. Werbung und Drittanbieter</h3><p>HexQuest verwendet Google AdMob für Bannerwerbung und Videos mit Belohnung.</p><p>Abhängig von SDK-Konfiguration, Region und Datenschutzeinstellungen können Daten wie IP-Adresse, Werbe- und andere Gerätekennungen, Interaktionen mit der App und Anzeigen sowie Diagnose- und Leistungsdaten erfasst und weitergegeben werden. Diese Daten können zur Bereitstellung und Messung von Werbung, Leistungsanalyse und Betrugsprävention verwendet werden.</p><p>Weitere Informationen findest du in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Google</a> und in der <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Datenschutzdokumentation des Google Mobile Ads SDK</a>.</p>
-<h3>4. Einwilligung und personalisierte Werbung</h3><p>Wenn erforderlich, zeigt das Spiel einen Datenschutzhinweis an, über den du die zutreffenden Werbeoptionen auswählen kannst.</p><p>Je nach verfügbaren Optionen kannst du der Verwendung deiner Daten für personalisierte Werbung zustimmen oder sie ablehnen. Die Ablehnung bedeutet nicht unbedingt, dass keine Werbung mehr angezeigt wird; gegebenenfalls können nicht personalisierte oder eingeschränkte Anzeigen erscheinen.</p><p>Soweit gesetzlich oder nach geltenden Regeln erforderlich, kannst du deine Einwilligung über die im Spiel verfügbaren Datenschutzoptionen überprüfen oder widerrufen.</p>
-<h3>5. Kinder</h3><p>HexQuest richtet sich nicht speziell an Kinder. Wir fordern wissentlich keine personenbezogenen Daten von Kindern an. Werbung und Datenschutzoptionen müssen entsprechend der Zielgruppe und den geltenden gesetzlichen und Plattformanforderungen konfiguriert werden.</p>
-<h3>6. Aufbewahrung und Sicherheit</h3><p>HexQuest führt keine Benutzerkonten und betreibt kein eigenes System zur Synchronisierung des Spielfortschritts zwischen Geräten. Die Wiederherstellung lokaler Daten nach Datenverlust, Geräteausfall oder Deinstallation kann nicht garantiert werden. Für von Google AdMob verarbeitete Daten gelten die Sicherheits-, Aufbewahrungs- und Datenverarbeitungspraktiken von Google.</p>
-<h3>7. Rechte und Kontakt</h3><p>Nach geltendem Recht, einschließlich der DSGVO, können dir je nach Verarbeitung Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Widerruf der Einwilligung zustehen.</p><p>Bei Datenschutzfragen zu HexQuest kontaktiere <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Anfragen zu Daten, die direkt von Google verarbeitet werden, müssen gegebenenfalls über die Datenschutzkanäle von Google gestellt werden.</p><p>Soweit zutreffend, kannst du dich auch bei der portugiesischen Datenschutzbehörde (CNPD) beschweren.</p>
-<h3>8. Änderungen dieser Datenschutzerklärung</h3><p>Diese Erklärung kann aktualisiert werden, um Änderungen am Spiel, an genutzten Diensten oder an gesetzlichen Pflichten zu berücksichtigen. Die aktuelle Version ist über die offiziellen HexQuest-Kanäle und den auf Google Play veröffentlichten Link verfügbar.</p>
-<h3>Google Play Games — Globale Bestenliste und Google Play Games</h3><p>HexQuest verwendet Google Play Games Services für die Plattformanmeldung und Bestenlisten im Klassikmodus. Bei der Nutzung kann Google deinen Spielernamen, Anzeigenamen, deine Spieler-ID und Punktzahlen verarbeiten, um dein Profil zuzuordnen, Rekorde zu speichern und Ranglisten anzuzeigen.</p><p>In der eigenen Bestenlistenansicht von HexQuest werden die Namen anderer Spieler teilweise verdeckt. Dies garantiert keine Anonymität und gilt nicht unbedingt für Google-Play-Games-Oberflächen. Die Sichtbarkeit hängt auch von den Datenschutzeinstellungen des Profils ab.</p><p>Die Bestenliste erfordert eine Internetverbindung und eine gültige Play-Games-Anmeldung. Das Spiel bleibt ohne diese Funktionen spielbar; ohne geeignete Verbindung oder Anmeldung werden keine Punktzahlen übermittelt.</p><p>Von Google Play Games verarbeitete Profil- und Punktedaten unterliegen den Richtlinien und Aufbewahrungs- und Löschmöglichkeiten von Google. Du kannst sie in den Google-Play-Games-Einstellungen verwalten.</p><p>Mais informações / More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-        `,
+        privacy: `<p>Diese Erklärung beschreibt, welche Daten die App <strong>HexQuest</strong>
+  (<code>com.hexquest.game</code>), veröffentlicht bei Google Play, verarbeitet.</p>
+<h3>1. Zusammenfassung</h3>
+<p>HexQuest ist ein kostenloses, werbefinanziertes Spiel. Du musst kein Konto erstellen und das
+  Spiel verlangt keine personenbezogenen Daten, um gespielt zu werden. Spielstand und Einstellungen
+  werden lokal auf deinem Gerät gespeichert. Google AdMob stellt die Werbung bereit; dessen SDK kann
+  bestimmte technische Daten und Nutzungsdaten erfassen und weitergeben, um Anzeigen auszuliefern und
+  zu messen, die Leistung zu analysieren und Betrug zu verhindern.</p>
+<h3>2. Auf dem Gerät gespeicherte Daten</h3>
+<ul>
+<li>Bestleistungen in den Modi Klassisch und Zeitangriff;</li>
+<li>Fortschritt bei Herausforderungen und Match-3;</li>
+<li>Virtuelle Münzen, freigeschaltete Designs und Ziele;</li>
+<li>Einstellungen für Ton, Vibration, Design und Sprache.</li>
+</ul>
+<p>Fortschritt, Münzen und Einstellungen bleiben auf dem Gerät, ausgenommen Klassikrekord und generierte Firebase-Identität. Eine Deinstallation kann lokale Daten löschen.</p>
+<h3>3. Werbung und Drittanbieter</h3>
+<p>HexQuest zeigt Werbung über Google AdMob und vermitteltes Unity Ads. Diese SDKs können IP-Adressen, Gerätekennungen, Anzeigeninteraktionen und Diagnosedaten für Werbung, Messung und Betrugsprävention entsprechend den Datenschutzeinstellungen verarbeiten.</p>
+<p><a href="https://unity.com/legal/privacy-policy">Unity Ads privacy</a> · <a href="https://docs.unity.com/en-us/ads-android/4.21.0/privacy/developer-consent/disclosures/google-data-safety">Unity Ads data disclosure</a></p>
+<p>HexQuest verwendet <strong>Google AdMob</strong> (Google Mobile Ads SDK 25.5.0) für
+  Bannerwerbung und Videos mit Belohnung.</p>
+<h4>3.1 Vom Werbe-SDK verarbeitete Daten</h4>
+<p>Das Google Mobile Ads SDK erfasst und teilt automatisch die folgenden Datentypen zu Zwecken der
+  Werbung, Analyse und Betrugsprävention:</p>
+<table>
+<thead><tr><th>Datentyp</th><th>Zweck</th></tr></thead>
+<tbody>
+<tr><td>IP-Adresse</td><td>Kann zur Schätzung des ungefähren Standorts des Geräts genutzt werden.</td></tr>
+<tr><td>Interaktionen mit dem Produkt</td><td>App-Start, Taps und Videoaufrufe.</td></tr>
+<tr><td>Diagnoseinformationen</td><td>Startzeit, Blockierrate und Energieverbrauch.</td></tr>
+<tr><td>Geräte- und Kontokennungen</td><td>Android-Werbe-ID, App-Set-ID und ggf. weitere Kennungen angemeldeter Konten.</td></tr>
+</tbody>
+</table>
+<p>Alle vom SDK erfassten Daten werden <strong>bei der Übertragung verschlüsselt</strong> (TLS).
+  Siehe <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a> und die
+  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google-Play-Datenoffenlegung
+  des SDK</a>.</p>
+<h3>4. Einwilligung und personalisierte Werbung</h3>
+<p>Wenn erforderlich, zeigt das Spiel einen Datenschutzhinweis an, über den du die zutreffenden
+  Werbeoptionen auswählen kannst. Die Ablehnung personalisierter Werbung bedeutet nicht
+  zwangsläufig, dass keine Werbung mehr angezeigt wird. Du kannst deine Einwilligung über die
+  Datenschutzoptionen im Spiel überprüfen oder widerrufen.</p>
+<h3>5. Kinder</h3>
+<p>HexQuest richtet sich nicht speziell an Kinder. Wir fordern wissentlich keine personenbezogenen
+  Daten von Kindern an.</p>
+<h3>6. Aufbewahrung und Sicherheit</h3>
+<p>Fortschritt wird nicht zwischen Geräten synchronisiert. Das anonyme Firebase-Konto dient nur der Bestenliste und garantiert keine Wiederherstellung lokaler Daten. Werbe- und Bestenlistendaten unterliegen auch den Verfahren der Anbieter.</p>
+<h3>7. Rechte und Kontakt</h3>
+<p>Nach der DSGVO hast du Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch
+  und Widerruf der Einwilligung. Kontakt:
+  <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>. Du kannst dich auch an die portugiesische
+  Datenschutzbehörde (CNPD) wenden.</p>
+<h3>8. Änderungen</h3>
+<p>Diese Erklärung kann aktualisiert werden. Die aktuelle Version ist auf dieser Seite und im
+  Google-Play-Eintrag verfügbar.</p>
+<h3>9. Firebase und globale Bestenliste</h3>
+<p>Firebase Authentication erstellt automatisch ein anonymes Konto. Cloud Firestore speichert Spielerkennung, generierten Spitznamen und Klassikrekord für die Bestenliste.</p>
+<p>Die Bestenliste zeigt generierte Spitznamen, Punktzahlen und Plätze. Deine Zeile ist mit «Du» markiert. Der vorhandene lokale Rekord wird beim ersten Start dieser Version zum Versand vorgemerkt; bei Netzwerkfehlern bleibt er für einen erneuten Versuch gespeichert.</p>
+<p>Das Löschen der App-Daten oder eine Neuinstallation kann eine neue Identität erzeugen, ohne übermittelte Punktzahlen automatisch zu löschen. Ferndaten bleiben bis zur Entfernung bestehen. Für Auskunft oder Löschung nutze den Kontakt dieser Richtlinie und nenne deinen Spitznamen.</p>
+<p><a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>`,
 
         terms: `<h3>1. Geltungsbereich und Zustimmung</h3><p>Diese Bedingungen regeln die Nutzung von HexQuest, einem kostenlosen Mobilspiel. Mit der Installation oder Nutzung des Spiels erklärst du dich mit diesen Bedingungen und geltendem Recht einverstanden. Wenn du nicht einverstanden bist, nutze die App nicht weiter und deinstalliere sie gegebenenfalls.</p>
 <h3>2. Nutzungslizenz</h3><p>Du erhältst eine persönliche, beschränkte, nicht ausschließliche und nicht übertragbare Lizenz zur privaten, nicht kommerziellen Nutzung von HexQuest.</p><p>Du darfst das Spiel nicht kopieren, ändern, verbreiten, verkaufen, unterlizenzieren oder weiterverbreiten und nicht versuchen, den Quellcode auf unbefugte Weise zu erlangen, soweit dies nicht gesetzlich erlaubt ist.</p>
@@ -541,7 +838,7 @@ const translations = {
 <h3>7. Änderungen und Aktualisierungen</h3><p>Das Spiel und diese Bedingungen können aktualisiert werden, um Fehler zu beheben, Funktionen hinzuzufügen, die Sicherheit zu verbessern oder rechtliche und technische Änderungen zu berücksichtigen. Wesentliche Änderungen werden, soweit erforderlich, auf geeignete Weise mitgeteilt.</p><p>Die aktuelle Fassung ist auf dieser Seite und gegebenenfalls in der App verfügbar.</p>
 <h3>8. Anwendbares Recht</h3><p>Diese Bedingungen unterliegen dem anwendbaren Recht. Zwingende Verbraucherrechte bleiben unberührt.</p>
 <h3>9. Kontakt</h3><p>Bei Fragen zu diesen Bedingungen kontaktiere <a href="mailto:Fc4rdoso@gmail.com">Fc4rdoso@gmail.com</a>.</p>
-<h3>Globale Bestenlisten</h3><p>Die Bestenlisten des Klassikmodus verwenden Google Play Games Services. Ist die Funktion aktiv und der Spieler angemeldet, können gültige Punktzahlen an die globale Bestenliste gesendet werden. Namen anderer Spieler werden in der eigenen HexQuest-Ansicht teilweise verdeckt, können aber in Google-Oberflächen anders erscheinen.</p><p>Bestenlisten können aus technischen Gründen oder bei Verbindungsproblemen nicht verfügbar sein. Ungültige, manipulierte oder missbräuchliche Punktzahlen können nach geltenden Regeln und verfügbaren Verfahren abgelehnt oder entfernt werden. Außerdem gelten die entsprechenden Google-Play-Games-Bedingungen.</p>
+<h3>Globale Bestenlisten</h3><p>Die globale Bestenliste des Klassikmodus verwendet Firebase Authentication mit anonymer Anmeldung und Cloud Firestore. Das Spiel erstellt automatisch eine Spielerkennung und einen Spitznamen, ohne ein Google-Konto oder eine manuelle Anmeldung zu verlangen. Der Klassikrekord kann an die globale Bestenliste übertragen und dort angezeigt werden.</p><p>Die Bestenliste benötigt eine Internetverbindung. Ergebnisse können vorgemerkt und später übertragen werden. Ungültige oder manipulierte Ergebnisse können entfernt werden. Das Löschen von App-Daten oder eine Neuinstallation kann eine neue Identität erzeugen, ohne frühere Ergebnisse automatisch zu löschen. Für eine Löschanfrage nutze den Kontakt auf dieser Seite und gib deinen Spitznamen an.</p>
         `,
 
         footer: "© 2026 HexQuest. Alle Rechte vorbehalten."
